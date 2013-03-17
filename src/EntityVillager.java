@@ -447,26 +447,53 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         var2 = new MerchantRecipeList();
         int var3;
         var2.add(new MerchantRecipe(
-                new ItemStack(Item.stick, 1),
-                (ItemStack)null,
+                new ItemStack(Item.swordSteel, 1),
+                new ItemStack(Item.ingotGold, 5),
                 new ItemStack(Item.swordDiamond, 1, 0)));
         var2.add(new MerchantRecipe(
         		new ItemStack(Item.shovelSteel, 1),
         		new ItemStack(Item.ingotGold, 5),
-        		new ItemStack(Item.shovelDiamond)
-        		));
-        try {
-        	String appdata = System.getenv("appdata");
-        	String dir = appdata + "\\.minecraft\\config\\test.txt";
-        	File f = new File(dir);
-			Formatter test = new Formatter(f);
-			test.format("%s", "Stick for diamond");
-			test.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+        		new ItemStack(Item.shovelDiamond)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.pickaxeSteel, 1),
+        		new ItemStack(Item.ingotGold, 5),
+        		new ItemStack(Item.pickaxeDiamond)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.axeSteel, 1),
+        		new ItemStack(Item.ingotGold, 5),
+        		new ItemStack(Item.axeDiamond)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.helmetSteel, 1),
+        		new ItemStack(Item.ingotGold, 5),
+        		new ItemStack(Item.helmetDiamond)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.plateSteel, 1),
+        		new ItemStack(Item.ingotGold, 5),
+        		new ItemStack(Item.plateDiamond)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.legsSteel, 1),
+        		new ItemStack(Item.ingotGold, 5),
+        		new ItemStack(Item.legsDiamond)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.bootsSteel, 1),
+        		new ItemStack(Item.ingotGold, 5),
+        		new ItemStack(Item.bootsDiamond)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.hoeSteel, 1),
+        		new ItemStack(Item.ingotGold, 5),
+        		new ItemStack(Item.hoeDiamond)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.redstone, 4),
+        		new ItemStack(Block.cobblestone, 4),
+        		new ItemStack(Item.field_94585_bY, 1)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Item.redstone, 3),
+        		new ItemStack(Block.cobblestone, 3),
+        		new ItemStack(Item.redstoneRepeater, 1)));
+        var2.add(new MerchantRecipe(
+        		new ItemStack(Block.rail, 1),
+        		new ItemStack(Item.ingotGold, 4),
+        		new ItemStack(Block.railPowered, 1)));
         this.addModTrades(var2);
 
         if (var2.isEmpty())
@@ -490,7 +517,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     private void addModTrades(MerchantRecipeList var1)
     {
         List var2 = ModLoader.getTrades(this.getProfession());
-
         if (var2 != null)
         {
             Iterator var3 = var2.iterator();
