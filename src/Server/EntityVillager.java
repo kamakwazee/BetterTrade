@@ -1,12 +1,8 @@
 package net.minecraft.src;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Collections;
-import java.util.Formatter;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
@@ -33,16 +29,10 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     private boolean field_82190_bM;
     private float field_82191_bN;
 
-    /**
-     * a villagers recipe list is intialized off this list ; the 2 params are min/max amount they will trade for 1
-     * emerald
-     */
-    private static final Map villagerStockList = new HashMap();
+    /** Selling list of Villagers items. */
+    private static final Map villagersSellingList = new HashMap();
 
-    /**
-     * Selling list of Blacksmith items. negative numbers mean 1 emerald for n items, positive numbers are n emeralds
-     * for 1 item
-     */
+    /** Selling list of Blacksmith items. */
     private static final Map blacksmithSellingList = new HashMap();
 
     public EntityVillager(World par1World)
@@ -219,33 +209,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         {
             NBTTagCompound var2 = par1NBTTagCompound.getCompoundTag("Offers");
             this.buyingList = new MerchantRecipeList(var2);
-        }
-    }
-
-    /**
-     * Returns the texture's file path as a String.
-     */
-    public String getTexture()
-    {
-        switch (this.getProfession())
-        {
-            case 0:
-                return "/mob/villager/farmer.png";
-
-            case 1:
-                return "/mob/villager/librarian.png";
-
-            case 2:
-                return "/mob/villager/priest.png";
-
-            case 3:
-                return "/mob/villager/smith.png";
-
-            case 4:
-                return "/mob/villager/butcher.png";
-
-            default:
-                return super.getTexture();
         }
     }
 
@@ -445,7 +408,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
 
         MerchantRecipeList var2;
         var2 = new MerchantRecipeList();
-        int var3;
+        int var6;
         var2.add(new MerchantRecipe(
                 new ItemStack(Item.swordSteel, 1),
                 new ItemStack(Item.ingotGold, 5),
@@ -494,7 +457,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         		new ItemStack(Block.rail, 1),
         		new ItemStack(Item.ingotGold, 4),
         		new ItemStack(Block.railPowered, 1)));
-        this.addModTrades(var2);
 
         if (var2.isEmpty())
         {
@@ -513,31 +475,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
             this.buyingList.addToListWithCheck((MerchantRecipe)var2.get(var9));
         }
     }
-
-    private void addModTrades(MerchantRecipeList var1)
-    {
-        List var2 = ModLoader.getTrades(this.getProfession());
-        if (var2 != null)
-        {
-            Iterator var3 = var2.iterator();
-
-            while (var3.hasNext())
-            {
-                TradeEntry var4 = (TradeEntry)var3.next();
-
-                if (var4.buying)
-                {
-                    addMerchantItem(var1, var4.id, this.rand, var4.chance);
-                }
-                else
-                {
-                    addBlacksmithItem(var1, var4.id, this.rand, var4.chance);
-                }
-            }
-        }
-    }
-
-    public void setRecipes(MerchantRecipeList par1MerchantRecipeList) {}
 
     /**
      * each recipie takes a random stack from villagerStockList and offers it for 1 emerald
@@ -560,7 +497,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
      */
     private static int getRandomCountForItem(int par0, Random par1Random)
     {
-        Tuple var2 = (Tuple)villagerStockList.get(Integer.valueOf(par0));
+        Tuple var2 = (Tuple)villagersSellingList.get(Integer.valueOf(par0));
         return var2 == null ? 1 : (((Integer)var2.getFirst()).intValue() >= ((Integer)var2.getSecond()).intValue() ? ((Integer)var2.getFirst()).intValue() : ((Integer)var2.getFirst()).intValue() + par1Random.nextInt(((Integer)var2.getSecond()).intValue() - ((Integer)var2.getFirst()).intValue()));
     }
 
@@ -593,40 +530,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         return var2 == null ? 1 : (((Integer)var2.getFirst()).intValue() >= ((Integer)var2.getSecond()).intValue() ? ((Integer)var2.getFirst()).intValue() : ((Integer)var2.getFirst()).intValue() + par1Random.nextInt(((Integer)var2.getSecond()).intValue() - ((Integer)var2.getFirst()).intValue()));
     }
 
-    public void handleHealthUpdate(byte par1)
-    {
-        if (par1 == 12)
-        {
-            this.generateRandomParticles("heart");
-        }
-        else if (par1 == 13)
-        {
-            this.generateRandomParticles("angryVillager");
-        }
-        else if (par1 == 14)
-        {
-            this.generateRandomParticles("happyVillager");
-        }
-        else
-        {
-            super.handleHealthUpdate(par1);
-        }
-    }
-
-    /**
-     * par1 is the particleName
-     */
-    private void generateRandomParticles(String par1Str)
-    {
-        for (int var2 = 0; var2 < 5; ++var2)
-        {
-            double var3 = this.rand.nextGaussian() * 0.02D;
-            double var5 = this.rand.nextGaussian() * 0.02D;
-            double var7 = this.rand.nextGaussian() * 0.02D;
-            this.worldObj.spawnParticle(par1Str, this.posX + (double)(this.rand.nextFloat() * this.width * 2.0F) - (double)this.width, this.posY + 1.0D + (double)(this.rand.nextFloat() * this.height), this.posZ + (double)(this.rand.nextFloat() * this.width * 2.0F) - (double)this.width, var3, var5, var7);
-        }
-    }
-
     /**
      * Initialize this creature.
      */
@@ -654,25 +557,25 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
 
     static
     {
-        villagerStockList.put(Integer.valueOf(Item.coal.itemID), new Tuple(Integer.valueOf(16), Integer.valueOf(24)));
-        villagerStockList.put(Integer.valueOf(Item.ingotIron.itemID), new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
-        villagerStockList.put(Integer.valueOf(Item.ingotGold.itemID), new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
-        villagerStockList.put(Integer.valueOf(Item.diamond.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
-        villagerStockList.put(Integer.valueOf(Item.paper.itemID), new Tuple(Integer.valueOf(24), Integer.valueOf(36)));
-        villagerStockList.put(Integer.valueOf(Item.book.itemID), new Tuple(Integer.valueOf(11), Integer.valueOf(13)));
-        villagerStockList.put(Integer.valueOf(Item.writtenBook.itemID), new Tuple(Integer.valueOf(1), Integer.valueOf(1)));
-        villagerStockList.put(Integer.valueOf(Item.enderPearl.itemID), new Tuple(Integer.valueOf(3), Integer.valueOf(4)));
-        villagerStockList.put(Integer.valueOf(Item.eyeOfEnder.itemID), new Tuple(Integer.valueOf(2), Integer.valueOf(3)));
-        villagerStockList.put(Integer.valueOf(Item.porkRaw.itemID), new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
-        villagerStockList.put(Integer.valueOf(Item.beefRaw.itemID), new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
-        villagerStockList.put(Integer.valueOf(Item.chickenRaw.itemID), new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
-        villagerStockList.put(Integer.valueOf(Item.fishCooked.itemID), new Tuple(Integer.valueOf(9), Integer.valueOf(13)));
-        villagerStockList.put(Integer.valueOf(Item.seeds.itemID), new Tuple(Integer.valueOf(34), Integer.valueOf(48)));
-        villagerStockList.put(Integer.valueOf(Item.melonSeeds.itemID), new Tuple(Integer.valueOf(30), Integer.valueOf(38)));
-        villagerStockList.put(Integer.valueOf(Item.pumpkinSeeds.itemID), new Tuple(Integer.valueOf(30), Integer.valueOf(38)));
-        villagerStockList.put(Integer.valueOf(Item.wheat.itemID), new Tuple(Integer.valueOf(18), Integer.valueOf(22)));
-        villagerStockList.put(Integer.valueOf(Block.cloth.blockID), new Tuple(Integer.valueOf(14), Integer.valueOf(22)));
-        villagerStockList.put(Integer.valueOf(Item.rottenFlesh.itemID), new Tuple(Integer.valueOf(36), Integer.valueOf(64)));
+        villagersSellingList.put(Integer.valueOf(Item.coal.itemID), new Tuple(Integer.valueOf(16), Integer.valueOf(24)));
+        villagersSellingList.put(Integer.valueOf(Item.ingotIron.itemID), new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
+        villagersSellingList.put(Integer.valueOf(Item.ingotGold.itemID), new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
+        villagersSellingList.put(Integer.valueOf(Item.diamond.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
+        villagersSellingList.put(Integer.valueOf(Item.paper.itemID), new Tuple(Integer.valueOf(24), Integer.valueOf(36)));
+        villagersSellingList.put(Integer.valueOf(Item.book.itemID), new Tuple(Integer.valueOf(11), Integer.valueOf(13)));
+        villagersSellingList.put(Integer.valueOf(Item.writtenBook.itemID), new Tuple(Integer.valueOf(1), Integer.valueOf(1)));
+        villagersSellingList.put(Integer.valueOf(Item.enderPearl.itemID), new Tuple(Integer.valueOf(3), Integer.valueOf(4)));
+        villagersSellingList.put(Integer.valueOf(Item.eyeOfEnder.itemID), new Tuple(Integer.valueOf(2), Integer.valueOf(3)));
+        villagersSellingList.put(Integer.valueOf(Item.porkRaw.itemID), new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
+        villagersSellingList.put(Integer.valueOf(Item.beefRaw.itemID), new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
+        villagersSellingList.put(Integer.valueOf(Item.chickenRaw.itemID), new Tuple(Integer.valueOf(14), Integer.valueOf(18)));
+        villagersSellingList.put(Integer.valueOf(Item.fishCooked.itemID), new Tuple(Integer.valueOf(9), Integer.valueOf(13)));
+        villagersSellingList.put(Integer.valueOf(Item.seeds.itemID), new Tuple(Integer.valueOf(34), Integer.valueOf(48)));
+        villagersSellingList.put(Integer.valueOf(Item.melonSeeds.itemID), new Tuple(Integer.valueOf(30), Integer.valueOf(38)));
+        villagersSellingList.put(Integer.valueOf(Item.pumpkinSeeds.itemID), new Tuple(Integer.valueOf(30), Integer.valueOf(38)));
+        villagersSellingList.put(Integer.valueOf(Item.wheat.itemID), new Tuple(Integer.valueOf(18), Integer.valueOf(22)));
+        villagersSellingList.put(Integer.valueOf(Block.cloth.blockID), new Tuple(Integer.valueOf(14), Integer.valueOf(22)));
+        villagersSellingList.put(Integer.valueOf(Item.rottenFlesh.itemID), new Tuple(Integer.valueOf(36), Integer.valueOf(64)));
         blacksmithSellingList.put(Integer.valueOf(Item.flintAndSteel.itemID), new Tuple(Integer.valueOf(3), Integer.valueOf(4)));
         blacksmithSellingList.put(Integer.valueOf(Item.shears.itemID), new Tuple(Integer.valueOf(3), Integer.valueOf(4)));
         blacksmithSellingList.put(Integer.valueOf(Item.swordSteel.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(11)));
@@ -718,24 +621,5 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         blacksmithSellingList.put(Integer.valueOf(Item.chickenCooked.itemID), new Tuple(Integer.valueOf(-8), Integer.valueOf(-6)));
         blacksmithSellingList.put(Integer.valueOf(Item.eyeOfEnder.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(11)));
         blacksmithSellingList.put(Integer.valueOf(Item.arrow.itemID), new Tuple(Integer.valueOf(-12), Integer.valueOf(-8)));
-        List var0 = ModLoader.getTrades(-1);
-        Iterator var1 = var0.iterator();
-
-        while (var1.hasNext())
-        {
-            TradeEntry var2 = (TradeEntry)var1.next();
-
-            if (var2.buying)
-            {
-                if (var2.min > 0 && var2.max > 0)
-                {
-                    villagerStockList.put(Integer.valueOf(var2.id), new Tuple(Integer.valueOf(var2.min), Integer.valueOf(var2.max)));
-                }
-            }
-            else if (var2.min > 0 && var2.max > 0)
-            {
-                blacksmithSellingList.put(Integer.valueOf(var2.id), new Tuple(Integer.valueOf(var2.min), Integer.valueOf(var2.max)));
-            }
-        }
     }
 }
