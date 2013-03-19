@@ -5,15 +5,15 @@ public class StringItemConversion{
 	public String[] itemStrings = {"shovelSteel", "picaxeSteel", "axeSteel", "flintAndSteel", "appleRed", "bow", "arrow", "coal", "diamond", "ingotIron", "ingotGold", "swordSteel", "swordWood",
 			"shovelWood", "pickaxeWood", "axeWood", "swordStone", "shovelStone", "pickaxeStone", "axeStone", "swordDiamond", "shovelDiamond", "pickaxeDiamond", "axeDiamond", "stick", "bowlEmpty",
 			"bowlSoup", "swordGold", "shovelGold", "pickaxeGold", "axeGold", "silk", "feather", "gunpowder", "hoeWood", "hoeStone", "hoeSteel", "hoeDiamond", "hoeGold", "seeds", "wheat", "bread",
-			"helmetLeather", "plateLeather", "legsLeather", "bootsLeather", "helmetChain", "plateChain", "plateChain", "legsChain", "bootsChain", "helmetSteel", "plateSteel", "legsSteel", "bootsSteel",
+			"helmetLeather", "plateLeather", "legsLeather", "bootsLeather", "helmetChain", "plateChain", "legsChain", "bootsChain", "helmetSteel", "plateSteel", "legsSteel", "bootsSteel",
 			"helmetDiamond", "plateDiamond", "legsDiamond", "bootsDiamond", "helmetGold", "plateGold", "legsGold", "bootsGold", "flint", "porkRaw", "porkCooked", "painting", "appleGold", "sign",
-			"doorWood", "bucketEmpty", "bucketWater", "bucketLava", "minecartEmpty", "saddle", "saddle", "doorSteel", "redstone", "snowball", "boat", "leather", "bucketMilk", "brick", "clay", "reed",
-			"paper", "book", "slimeBall", "minecraftCrate", "minecraftPowered", "egg", "compass", "fishingRod", "clock", "lightStoneDust", "fishRaw", "fishCooked", "dyePowder", "bone", "sugar",
+			"doorWood", "bucketEmpty", "bucketWater", "bucketLava", "minecartEmpty", "saddle", "doorSteel", "redstone", "snowball", "boat", "leather", "bucketMilk", "brick", "clay", "reed",
+			"paper", "book", "slimeBall", "minecartCrate", "minecartPowered", "egg", "compass", "fishingRod", "clock", "lightStoneDust", "fishRaw", "fishCooked", "dyePowder", "bone", "sugar",
 			"cake", "bed", "redstoneRepeater", "cookie", "map", "shears", "melon", "pumpkinSeeds", "melonSeeds", "beefRaw", "beefCooked", "chickenRaw", "chickenCooked", "rottenFlesh", "enderPearl",
 			"blazeRod", "ghastTear", "goldNugget", "netherStalkSeeds", "potion", "glassBottle", "spiderEye", "fermentedSpiderEye", "blazePowder", "magmaCream", "brewingStand", "cauldron", "eyeOfEnder",
-			"speckledMelon", "monsterPlacer", "expBottle", "fireballCharge", "writableBook", "writtenBook", "emerald", "itemFrame", "flowerPot", "carrot", "potato", "bakedPotato", "poisonousPotato",
-			"emptyMap", "goldenCarrot", "skull", "carrotOnAStick", "netherStar", "pumpkinPie", "firework", "fireworkCharge", "enchantedBook", "comparator", "netherBrick", "netherQuartz", "minecraftTnt",
-			"minecraftHopper", "record13", "recordCat", "recordBlocks", "recordChirp", "recordFar", "recordMall", "recordMellohi", "recordStal", "recordStrad", "recordWard", "record11", "recordWait"};
+			"speckledMelon", "expBottle", "fireballCharge", "writableBook", "writtenBook", "emerald", "flowerPot", "carrot", "potato", "bakedPotato", "poisonousPotato",
+			"emptyMap", "goldenCarrot", "skull", "carrotOnAStick", "netherStar", "pumpkinPie", "firework", "fireworkCharge", "enchantedBook", "comparator", "netherBrick", "netherQuartz", "minecartTnt",
+			"minecartHopper", "record13", "recordCat", "recordBlocks", "recordChirp", "recordFar", "recordMall", "recordMellohi", "recordStal", "recordStrad", "recordWard", "record11", "recordWait"};
 	
 	public Item[] items;
 	
