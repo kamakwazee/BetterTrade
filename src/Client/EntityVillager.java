@@ -45,6 +45,11 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
      * for 1 item
      */
     private static final Map blacksmithSellingList = new HashMap();
+    
+    //Added by BetterTrade
+    public ItemStack i1, i2, b;
+    public Item item1, item2, buyitem;
+    public Block block1, block2, buyblock;
 
     public EntityVillager(World par1World)
     {
@@ -548,15 +553,50 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
 							buyamt = 0;
 						}
 						StringItemConversion sic = new StringItemConversion();
-						ItemStack i1 = new ItemStack(sic.stringToItem(firstItem), amt1);
-						ItemStack i2;
+						item1 = sic.stringToItem(firstItem);
+						if(item1 == (Item)null){
+							block1 = sic.stringToBlock(firstItem);
+							if(block1 == (Block)null){
+								i1 = new ItemStack(Item.emerald, amt1);
+							}
+							else{
+								i1 = new ItemStack(block1, amt1);
+							}
+						}
+						else{
+							i1 = new ItemStack(item1, amt1);
+						}
 						if (secondItem != ""){
-							i2 = new ItemStack(sic.stringToItem(secondItem), amt2);
+							item2 = sic.stringToItem(secondItem);
+							if (item2 == (Item)null){
+								block2 = sic.stringToBlock(secondItem);
+								if(block2 == (Block)null){
+									i2 = new ItemStack(Item.emerald, amt2);
+								}
+								else{
+									i2 = new ItemStack(block2, amt2);
+								}
+							}
+							else{
+								i2 = new ItemStack(item2, amt2);
+							}
 						}
 						else{
 							i2 = (ItemStack)null;
 						}
-						ItemStack b = new ItemStack(sic.stringToItem(buyingItem), buyamt);
+						buyitem = sic.stringToItem(buyingItem);
+						if(buyitem == (Item)null){
+							buyblock = sic.stringToBlock(buyingItem);
+							if(buyblock == (Block)null){
+								b = new ItemStack(Item.emerald, buyamt);
+							}
+							else{
+								b = new ItemStack(buyblock, buyamt);
+							}
+						}
+						else{
+							b = new ItemStack(buyitem, buyamt);
+						}
 						var2.add(new MerchantRecipe(i1,i2,b));
 					}
 					s.close();
