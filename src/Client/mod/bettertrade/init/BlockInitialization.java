@@ -1,4 +1,6 @@
-package net.minecraft.src;
+package mod.bettertrade.init;
+
+import net.minecraft.block.Block;
 
 public class BlockInitialization {
 	
@@ -7,7 +9,7 @@ public class BlockInitialization {
     		Block.cloth, Block.plantYellow, Block.plantRed, Block.mushroomBrown, Block.mushroomRed, Block.blockGold, Block.blockSteel, Block.stoneSingleSlab, Block.brick, Block.tnt, Block.bookShelf,
     		Block.cobblestoneMossy, Block.obsidian, Block.torchWood, Block.stairsWoodOak, Block.chest, Block.blockDiamond, Block.workbench, Block.crops, Block.furnaceIdle, Block.signPost, 
     		Block.doorWood, Block.ladder, Block.rail, Block.stairsCobblestone, Block.lever, Block.pressurePlateStone, Block.doorSteel, Block.pressurePlatePlanks, Block.torchRedstoneActive,
-    		Block.stoneButton, Block.snow, Block.ice, Block.blockSnow, Block.cactus, Block.blockClay, Block.reed, Block.jukebox, Block.pumpkin, Block.netherrack, Block.slowSand, Block.glowStone,
+    		Block.stoneButton, Block.snow, Block.ice, Block.blockSnow, Block.cactus, Block.blockClay, Block.reed, Block.jukebox, Block.fence, Block.pumpkin, Block.netherrack, Block.slowSand, Block.glowStone,
     		Block.pumpkinLantern, Block.cake, Block.redstoneRepeaterActive, Block.lockedChest, Block.trapdoor, Block.silverfish, Block.stoneBrick, Block.mushroomCapBrown, Block.mushroomCapRed,
     		Block.fenceIron, Block.thinGlass, Block.melon, Block.fenceGate, Block.stairsBrick, Block.stairsStoneBrick, Block.mycelium, Block.waterlily, Block.netherBrick, Block.netherFence,
     		Block.stairsNetherBrick, Block.enchantmentTable, Block.brewingStand, Block.cauldron, Block.whiteStone, Block.dragonEgg, Block.redstoneLampActive, Block.woodSingleSlab, Block.cocoaPlant,

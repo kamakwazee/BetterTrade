@@ -1,8 +1,13 @@
-package net.minecraft.src;
+package mod.bettertrade;
+
+import mod.bettertrade.init.BlockInitialization;
+import mod.bettertrade.init.ItemInitialization;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 
 public class StringItemConversion{
 
-	public String[] itemStrings = {"shovelSteel", "picaxeSteel", "axeSteel", "flintAndSteel", "appleRed", "bow", "arrow", "coal", "diamond", "ingotIron", "ingotGold", "swordSteel", "swordWood",
+	public static String[] itemStrings = {"shovelSteel", "picaxeSteel", "axeSteel", "flintAndSteel", "appleRed", "bow", "arrow", "coal", "diamond", "ingotIron", "ingotGold", "swordSteel", "swordWood",
 			"shovelWood", "pickaxeWood", "axeWood", "swordStone", "shovelStone", "pickaxeStone", "axeStone", "swordDiamond", "shovelDiamond", "pickaxeDiamond", "axeDiamond", "stick", "bowlEmpty",
 			"bowlSoup", "swordGold", "shovelGold", "pickaxeGold", "axeGold", "silk", "feather", "gunpowder", "hoeWood", "hoeStone", "hoeSteel", "hoeDiamond", "hoeGold", "seeds", "wheat", "bread",
 			"helmetLeather", "plateLeather", "legsLeather", "bootsLeather", "helmetChain", "plateChain", "legsChain", "bootsChain", "helmetSteel", "plateSteel", "legsSteel", "bootsSteel",
@@ -17,10 +22,10 @@ public class StringItemConversion{
 	
 	public Item[] items;
 	
-	public String[] blockStrings = {"stone", "dirt", "cobblestone", "planks", "sapling", "bedrock", "sand", "gravel", "wood", "leaves", "sponge", "glass", "blockLapis", "dispenser", "sandStone", "bed",
+	public static String[] blockStrings = {"stone", "dirt", "cobblestone", "planks", "sapling", "bedrock", "sand", "gravel", "wood", "leaves", "sponge", "glass", "blockLapis", "dispenser", "sandStone", "bed",
 			"railPowered", "railDetector", "pistonSticky", "web", "tallGrass", "deadBush", "piston", "wool", "flowerYellow", "flowerRed", "mushroomBrown", "mushroomRed", "blockGold", "blockSteel",
 			"stoneSlab", "brick", "tnt", "bookShelf", "cobblestoneMossy", "obsidian", "torch", "stairsWoodOak", "chest", "blockDiamond", "workbench", "crops", "furnace", "sign", "doorWood", "ladder", 
-			"rail", "stairCobblestone", "lever", "pressurePlateStone", "doorSteel", "pressurePlateWood", "torchRedstone", "stoneButton", "snow", "ice", "blockSnow", "cactus", "blockClay", "reed", 
+			"rail", "stairsCobblestone", "lever", "pressurePlateStone", "doorSteel", "pressurePlateWood", "torchRedstone", "stoneButton", "snow", "ice", "blockSnow", "cactus", "blockClay", "reed", 
 			"jukebox", "fence", "pumpkin", "netherrack", "slowSand", "glowStone", "pumpkinLantern", "cake", "redstoneRepeater", "lockedChest", "trapdoor", "silverfish", "stoneBrick", "mushroomCapBrown",
 			"mushroomCapRed", "fenceIron", "thinGlass", "melon", "gate", "stairsBrick", "stairsStoneBrickSmooth", "mycelium", "waterlily", "netherBrick", "netherFence", "stairsNetherBrick",
 			"enchantmentTable", "brewingStand", "cauldron", "whiteStone", "dragonEgg", "redstoneLamp", "woodSlab", "cocoaPlant", "stairsSandStone", "enderChest", "tripWireSource", "tripWire", "blockEmerald", 

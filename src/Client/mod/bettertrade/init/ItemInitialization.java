@@ -1,4 +1,6 @@
-package net.minecraft.src;
+package mod.bettertrade.init;
+
+import net.minecraft.item.Item;
 
 public class ItemInitialization {
 
