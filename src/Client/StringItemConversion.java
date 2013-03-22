@@ -11,7 +11,7 @@ public class StringItemConversion{
 			"paper", "book", "slimeBall", "minecartCrate", "minecartPowered", "egg", "compass", "fishingRod", "clock", "lightStoneDust", "fishRaw", "fishCooked", "dyePowder", "bone", "sugar",
 			"cake", "bed", "redstoneRepeater", "cookie", "map", "shears", "melon", "pumpkinSeeds", "melonSeeds", "beefRaw", "beefCooked", "chickenRaw", "chickenCooked", "rottenFlesh", "enderPearl",
 			"blazeRod", "ghastTear", "goldNugget", "netherStalkSeeds", "potion", "glassBottle", "spiderEye", "fermentedSpiderEye", "blazePowder", "magmaCream", "brewingStand", "cauldron", "eyeOfEnder",
-			"speckledMelon", "expBottle", "fireballCharge", "writableBook", "writtenBook", "emerald", "flowerPot", "carrot", "potato", "bakedPotato", "poisonousPotato",
+			"speckledMelon", "expBottle", "fireballCharge", "writableBook", "writtenBook", "emerald", "itemFrame", "flowerPot", "carrot", "potato", "bakedPotato", "poisonousPotato",
 			"emptyMap", "goldenCarrot", "skull", "carrotOnAStick", "netherStar", "pumpkinPie", "firework", "fireworkCharge", "enchantedBook", "comparator", "netherBrick", "netherQuartz", "minecartTnt",
 			"minecartHopper", "record13", "recordCat", "recordBlocks", "recordChirp", "recordFar", "recordMall", "recordMellohi", "recordStal", "recordStrad", "recordWard", "record11", "recordWait"};
 	
@@ -19,13 +19,13 @@ public class StringItemConversion{
 	
 	public String[] blockStrings = {"stone", "dirt", "cobblestone", "planks", "sapling", "bedrock", "sand", "gravel", "wood", "leaves", "sponge", "glass", "blockLapis", "dispenser", "sandStone", "bed",
 			"railPowered", "railDetector", "pistonSticky", "web", "tallGrass", "deadBush", "piston", "wool", "flowerYellow", "flowerRed", "mushroomBrown", "mushroomRed", "blockGold", "blockSteel",
-			"stoneSlab", "brick", "tnt", "bookShelf", "cobblestoneMossy", "obsidian", "torchWood", "stairsWood", "chest", "blockDiamond", "workbench", "crops", "furnace", "sign", "doorWood", "ladder", 
+			"stoneSlab", "brick", "tnt", "bookShelf", "cobblestoneMossy", "obsidian", "torch", "stairsWoodOak", "chest", "blockDiamond", "workbench", "crops", "furnace", "sign", "doorWood", "ladder", 
 			"rail", "stairCobblestone", "lever", "pressurePlateStone", "doorSteel", "pressurePlateWood", "torchRedstone", "stoneButton", "snow", "ice", "blockSnow", "cactus", "blockClay", "reed", 
 			"jukebox", "fence", "pumpkin", "netherrack", "slowSand", "glowStone", "pumpkinLantern", "cake", "redstoneRepeater", "lockedChest", "trapdoor", "silverfish", "stoneBrick", "mushroomCapBrown",
 			"mushroomCapRed", "fenceIron", "thinGlass", "melon", "gate", "stairsBrick", "stairsStoneBrickSmooth", "mycelium", "waterlily", "netherBrick", "netherFence", "stairsNetherBrick",
 			"enchantmentTable", "brewingStand", "cauldron", "whiteStone", "dragonEgg", "redstoneLamp", "woodSlab", "cocoaPlant", "stairsSandStone", "enderChest", "tripWireSource", "tripWire", "blockEmerald", 
-			"stairsWoodSpruce", "stairsWoodBirch", "stairsWoodJungle", "beacon", "cobblestoneWall", "flowerPot", "carrot", "potato", "woodenButton", "skull", "anvil", "chestTrap", "weightedPlateLight",
-			"weightedPlateHeavy", "comparator", "daylightDetector", "blockRedstone", "netherquartz", "hopper", "quartzBlock", "stairsQuartz", "activatorRail", "dropper"};
+			"stairsWoodSpruce", "stairsWoodBirch", "stairsWoodJungle", "beacon", "cobblestoneWall", "flowerPot", "carrot", "potato", "woodenButton", "skull", "anvil", "chestTrapped", "pressurePlateGold",
+			"pressurePlateIron", "comparator", "daylightSensor", "blockRedstone", "hopper", "quartzBlock", "stairsQuartz", "activatorRail", "dropper"};
 	
 	public Block[] blocks;
 	

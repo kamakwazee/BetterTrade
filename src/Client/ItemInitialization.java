@@ -13,9 +13,9 @@ public class ItemInitialization {
     	Item.fishRaw, Item.fishCooked, Item.dyePowder, Item.bone, Item.sugar, Item.cake, Item.bed, Item.redstoneRepeater, Item.cookie, Item.map, Item.shears, Item.melon, Item.pumpkinSeeds, Item.melonSeeds, 
     	Item.beefRaw, Item.beefCooked, Item.chickenRaw, Item.chickenCooked, Item.rottenFlesh, Item.enderPearl, Item.blazeRod, Item.ghastTear, Item.goldNugget, Item.netherStalkSeeds, Item.potion, 
     	Item.glassBottle, Item.spiderEye, Item.fermentedSpiderEye, Item.blazePowder, Item.magmaCream, Item.brewingStand, Item.cauldron, Item.eyeOfEnder, Item.speckledMelon, 
-    	Item.expBottle, Item.fireballCharge, Item.writableBook, Item.writtenBook, Item.emerald, Item.flowerPot, Item.carrot, Item.potato, Item.bakedPotato, Item.poisonousPotato, 
+    	Item.expBottle, Item.fireballCharge, Item.writableBook, Item.writtenBook, Item.emerald, Item.itemFrame, Item.flowerPot, Item.carrot, Item.potato, Item.bakedPotato, Item.poisonousPotato, 
     	Item.emptyMap, Item.goldenCarrot, Item.skull, Item.carrotOnAStick, Item.netherStar, Item.pumpkinPie, Item.firework, Item.fireworkCharge, Item.field_94585_bY, Item.field_94584_bZ, 
-    	Item.field_94583_ca, Item.field_94582_cb, Item.field_96600_cc, Item.record13, Item.recordCat, Item.recordBlocks, Item.recordChirp, Item.recordFar, Item.recordMall, Item.recordMellohi, 
+    	Item.field_94583_ca, Item.tntMinecart, Item.hopperMinecart, Item.record13, Item.recordCat, Item.recordBlocks, Item.recordChirp, Item.recordFar, Item.recordMall, Item.recordMellohi, 
     	Item.recordStal, Item.recordStrad, Item.recordWard, Item.record11, Item.recordWait};
     
 	public Item[] returnItemArray(){

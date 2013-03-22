@@ -6,7 +6,6 @@ import java.util.Collections;
 import java.util.Formatter;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
@@ -33,6 +32,11 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     private String lastBuyingPlayer;
     private boolean field_82190_bM;
     private float field_82191_bN;
+    
+    //Added by BetterTrade
+    public ItemStack i1, i2, b;
+    public Item item1, item2, buyitem;
+    public Block block1, block2, buyblock;
 
     /**
      * a villagers recipe list is intialized off this list ; the 2 params are min/max amount they will trade for 1
@@ -45,11 +49,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
      * for 1 item
      */
     private static final Map blacksmithSellingList = new HashMap();
-    
-    //Added by BetterTrade
-    public ItemStack i1, i2, b;
-    public Item item1, item2, buyitem;
-    public Block block1, block2, buyblock;
 
     public EntityVillager(World par1World)
     {
@@ -641,29 +640,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         }
     }
 
-    private void addModTrades(MerchantRecipeList var1)
-    {
-        List var2 = ModLoader.getTrades(this.getProfession());
-        if (var2 != null)
-        {
-            Iterator var3 = var2.iterator();
-
-            while (var3.hasNext())
-            {
-                TradeEntry var4 = (TradeEntry)var3.next();
-
-                if (var4.buying)
-                {
-                    addMerchantItem(var1, var4.id, this.rand, var4.chance);
-                }
-                else
-                {
-                    addBlacksmithItem(var1, var4.id, this.rand, var4.chance);
-                }
-            }
-        }
-    }
-
     public void setRecipes(MerchantRecipeList par1MerchantRecipeList) {}
 
     /**
@@ -845,24 +821,5 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         blacksmithSellingList.put(Integer.valueOf(Item.chickenCooked.itemID), new Tuple(Integer.valueOf(-8), Integer.valueOf(-6)));
         blacksmithSellingList.put(Integer.valueOf(Item.eyeOfEnder.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(11)));
         blacksmithSellingList.put(Integer.valueOf(Item.arrow.itemID), new Tuple(Integer.valueOf(-12), Integer.valueOf(-8)));
-        List var0 = ModLoader.getTrades(-1);
-        Iterator var1 = var0.iterator();
-
-        while (var1.hasNext())
-        {
-            TradeEntry var2 = (TradeEntry)var1.next();
-
-            if (var2.buying)
-            {
-                if (var2.min > 0 && var2.max > 0)
-                {
-                    villagerStockList.put(Integer.valueOf(var2.id), new Tuple(Integer.valueOf(var2.min), Integer.valueOf(var2.max)));
-                }
-            }
-            else if (var2.min > 0 && var2.max > 0)
-            {
-                blacksmithSellingList.put(Integer.valueOf(var2.id), new Tuple(Integer.valueOf(var2.min), Integer.valueOf(var2.max)));
-            }
-        }
     }
 }
