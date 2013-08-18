@@ -1,0 +1,1014 @@
+2013-08-18 15:41:56 [INFO] [ForgeModLoader] Forge Mod Loader version 6.2.43.827 for Minecraft 1.6.2 loading
+2013-08-18 15:41:56 [INFO] [ForgeModLoader] Java is Java HotSpot(TM) 64-Bit Server VM, version 1.7.0_10, running on Windows 7:amd64:6.1, installed at C:\Program Files\Java\jre7
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Java classpath at launch is C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\minecraftforge\minecraftforge\9.10.0.827\minecraftforge-9.10.0.827.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\minecraft\launchwrapper\1.3\launchwrapper-1.3.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\ow2\asm\asm-all\4.1\asm-all-4.1.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.0\lwjgl-2.9.0.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.0\lwjgl_util-2.9.0.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\argo\argo\2.25_fixed\argo-2.25_fixed.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\bouncycastle\bcprov-jdk15on\1.47\bcprov-jdk15on-1.47.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\google\guava\guava\14.0\guava-14.0.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\google\code\gson\gson\2.2.2\gson-2.2.2.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.0\lwjgl-2.9.0.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.0\lwjgl_util-2.9.0.jar;C:\Users\Kamakwazee\AppData\Roaming\.minecraft\versions\1.6.2-Forge9.10.0.827\1.6.2-Forge9.10.0.827.jar
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Java library path at launch is C:\Users\Kamakwazee\AppData\Roaming\.minecraft\versions\1.6.2-Forge9.10.0.827\1.6.2-Forge9.10.0.827-natives-182100604357476
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Enabling runtime deobfuscation
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Instantiating coremod class FMLCorePlugin
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Loaded coremod FMLCorePlugin
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Instantiating coremod class FMLForgePlugin
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Loaded coremod FMLForgePlugin
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] All fundamental core mods are successfully located
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Discovering coremods
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Examining for coremod candidacy BetterTradeCore.jar
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Instantiating coremod class BetterTradeLoadingPlugin
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] The coremod bettertrade.core.BetterTradeLoadingPlugin requested minecraft version 1.6.2 and minecraft is 1.6.2. It will be loaded.
+2013-08-18 15:41:56 [FINE] [ForgeModLoader] Loaded coremod BetterTradeLoadingPlugin
+2013-08-18 15:41:56 [FINEST] [ForgeModLoader] Registering transformer cpw.mods.fml.common.asm.transformers.AccessTransformer
+2013-08-18 15:41:56 [INFO] [STDOUT] Loaded 39 rules from AccessTransformer config file fml_at.cfg
+2013-08-18 15:41:56 [FINEST] [ForgeModLoader] Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
+2013-08-18 15:41:56 [FINEST] [ForgeModLoader] Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
+2013-08-18 15:41:56 [FINEST] [ForgeModLoader] Registering transformer net.minecraftforge.transformers.ForgeAccessTransformer
+2013-08-18 15:41:57 [INFO] [STDOUT] Loaded 107 rules from AccessTransformer config file forge_at.cfg
+2013-08-18 15:41:57 [FINEST] [ForgeModLoader] Registering transformer net.minecraftforge.transformers.EventTransformer
+2013-08-18 15:41:57 [FINEST] [ForgeModLoader] Registering transformer bettertrade.core.BetterTradeClassTransformer
+2013-08-18 15:41:57 [FINE] [ForgeModLoader] Running coremod plugins
+2013-08-18 15:41:57 [FINE] [ForgeModLoader] Running coremod plugin FMLCorePlugin
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.Block.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockBaseRailLogic.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockButton.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockCactus.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockChest.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockCocoa.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockComparator.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockCrops.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockDoor.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockFarmland.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockFire.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockFlower.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockFlowing.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockFluid.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockGrass.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockLadder.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockLeaves.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockLever.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockLog.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockMushroom.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockMycelium.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockNetherStalk.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockPane.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockPistonBase.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockPortal.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockPumpkin.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockRailBase.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockRedstoneWire.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockReed.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockSand.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockSapling.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockSkull.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockSnow.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockStem.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockTallGrass.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockTorch.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockTrapDoor.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockTripWireSource.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.block.BlockVine.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.ClientBrandRetriever.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.Minecraft.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.audio.SoundManager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.entity.EntityPlayerSP.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.gui.GuiControls.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.gui.GuiCreateWorld.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.gui.GuiIngame.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.gui.GuiMainMenu.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.gui.GuiSlot.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.gui.achievement.GuiAchievements.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.gui.inventory.GuiContainer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.gui.inventory.GuiContainerCreative.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.model.ModelBase.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.model.ModelBox.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.model.ModelRenderer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.model.PositionTextureVertex.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.model.TexturedQuad.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.multiplayer.ChunkProviderClient.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.multiplayer.GuiConnecting.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.multiplayer.NetClientHandler.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.multiplayer.PlayerControllerMP.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.multiplayer.WorldClient.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.particle.EffectRenderer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.particle.EntityDiggingFX.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.particle.EntityFireworkStarterFX.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.EntityRenderer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.ItemRenderer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.OpenGlHelper.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.RenderBlocks.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.RenderGlobal.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.Tessellator.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.WorldRenderer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.entity.RenderBiped.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.entity.RenderItem.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.entity.RenderManager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.entity.RenderPlayer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.entity.RenderSnowMan.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.entity.RenderVillager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.entity.RendererLivingEntity.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.texture.Stitcher.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.texture.TextureAtlasSprite.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.texture.TextureMap.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.renderer.tileentity.TileEntityChestRenderer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.resources.LanguageManager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.client.settings.GameSettings.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.command.CommandHandler.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.crash.CallableSuspiciousClasses.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.crash.CrashReport.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.crash.CrashReportCategory.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.creativetab.CreativeTabs.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.enchantment.Enchantment.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.enchantment.EnchantmentHelper.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.Entity.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.EntityList.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.EntityLiving.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.EntityLivingBase.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.EntityTracker.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.EntityTrackerEntry.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.boss.EntityDragon.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.boss.EntityWither.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.boss.IBossDisplayData.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.item.EntityEnderPearl.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.item.EntityItem.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.item.EntityMinecart.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.item.EntityMinecartContainer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.item.EntityMinecartEmpty.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.item.EntityMinecartFurnace.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.item.EntityMinecartHopper.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.monster.EntityEnderman.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.monster.EntitySlime.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.passive.EntityMooshroom.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.passive.EntityOcelot.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.passive.EntitySheep.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.passive.EntityVillager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.player.EntityPlayer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.player.EntityPlayerMP.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.entity.player.InventoryPlayer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.ContainerEnchantment.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.ContainerFurnace.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.ContainerRepair.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.Slot.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.SlotArmor.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.SlotBrewingStandIngredient.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.SlotBrewingStandPotion.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.SlotCrafting.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.inventory.SlotFurnace.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.BehaviorDispenseArmor.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.EnumArmorMaterial.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.EnumToolMaterial.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.Item.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemArmor.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemBlock.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemBow.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemBucket.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemBucketMilk.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemDye.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemEmptyMap.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemFlintAndSteel.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemHoe.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemInWorldManager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemMap.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemSeedFood.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemSeeds.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemShears.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemStack.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.ItemTool.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.crafting.CraftingManager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.crafting.FurnaceRecipes.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.item.crafting.RecipeFireworks.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.logging.LogAgent.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.nbt.CompressedStreamTools.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.nbt.NBTTagList.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.MemoryConnection.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.NetLoginHandler.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.NetServerHandler.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.NetworkListenThread.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.TcpConnection.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.packet.NetHandler.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.packet.Packet.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.packet.Packet1Login.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.packet.Packet51MapChunk.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.packet.Packet52MultiBlockChange.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.network.packet.Packet56MapChunks.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.potion.PotionEffect.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.server.MinecraftServer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.server.ServerListenThread.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.server.dedicated.DedicatedServer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.server.gui.StatsComponent.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.server.integrated.IntegratedServer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.server.integrated.IntegratedServerListenThread.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.server.management.PlayerInstance.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.server.management.ServerConfigurationManager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.stats.StatFileWriter.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.stats.StatList.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.tileentity.TileEntity.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.tileentity.TileEntityBeacon.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.tileentity.TileEntityBrewingStand.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.tileentity.TileEntityFurnace.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.util.CryptManager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.util.MovingObjectPosition.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.util.ResourceLocation.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.util.StringTranslate.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.util.WeightedRandomChestContent.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.village.VillageCollection.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.ChunkCache.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.Explosion.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.IBlockAccess.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.SpawnerAnimals.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.World.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.WorldProvider.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.WorldServer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.WorldType.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.biome.BiomeDecorator.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.biome.BiomeGenBase.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.biome.WorldChunkManager.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.chunk.Chunk.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.chunk.storage.AnvilChunkLoader.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.chunk.storage.AnvilSaveHandler.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.ChunkProviderEnd.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.ChunkProviderGenerate.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.ChunkProviderHell.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.ChunkProviderServer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.MapGenCaves.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.MapGenRavine.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenBigMushroom.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenBigTree.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenDeadBush.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenDungeons.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenForest.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenHugeTrees.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenMinable.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenShrub.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenSwamp.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenTaiga1.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenTaiga2.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenTallGrass.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.feature.WorldGenTrees.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.layer.GenLayer.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.layer.GenLayerBiome.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentMineshaftCorridor.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentScatteredFeatureDesertPyramid.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentScatteredFeatureJunglePyramid.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentStrongholdChestCorridor.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentStrongholdLibrary.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentStrongholdRoomCrossing.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentVillage.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentVillageHouse2.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.ComponentVillageStartPiece.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.MapGenStronghold.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.gen.structure.StructureVillagePieces.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.storage.MapData.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.storage.SaveHandler.binpatch
+2013-08-18 15:42:02 [FINEST] [ForgeModLoader] Reading patch data from binpatch/client/net.minecraft.world.storage.WorldInfo.binpatch
+2013-08-18 15:42:02 [FINE] [ForgeModLoader] Read 232 binary patches
+2013-08-18 15:42:02 [FINE] [ForgeModLoader] Patch list :
+	xk=[xk : xk => net.minecraft.item.ItemDye (true) size 7289]	
+xi=[xi : xi => net.minecraft.item.ItemTool (true) size 2546]	
+bka=[bka : bka => net.minecraft.client.resources.LanguageManager (true) size 3250]	
+xm=[xm : xm => net.minecraft.item.ItemEmptyMap (true) size 1467]	
+xv=[xv : xv => net.minecraft.item.ItemFlintAndSteel (true) size 1193]	
+akg=[akg : akg => net.minecraft.world.gen.layer.GenLayerBiome (true) size 1122]	
+ajj=[ajj : ajj => net.minecraft.world.gen.structure.ComponentVillage (true) size 5084]	
+bjl=[bjl : bjl => net.minecraft.util.ResourceLocation (true) size 1521]	
+wg=[wg : wg => net.minecraft.item.ItemArmor (true) size 4113]	
+wh=[wh : wh => net.minecraft.item.BehaviorDispenseArmor (true) size 1467]	
+wi=[wi : wi => net.minecraft.item.EnumArmorMaterial (true) size 1903]	
+wo=[wo : wo => net.minecraft.item.ItemBow (true) size 3902]	
+wq=[wq : wq => net.minecraft.item.ItemBucket (true) size 3600]	
+ajf=[ajf : ajf => net.minecraft.world.gen.structure.ComponentVillageHouse2 (true) size 4020]	
+ajg=[ajg : ajg => net.minecraft.world.gen.structure.ComponentVillageStartPiece (true) size 1150]	
+wv=[wv : wv => net.minecraft.creativetab.CreativeTabs (true) size 5562]	
+bis=[bis : bis => net.minecraft.client.renderer.tileentity.TileEntityChestRenderer (true) size 3431]	
+vv=[vv : vv => net.minecraft.inventory.SlotArmor (true) size 1083]	
+wd=[wd : wd => net.minecraft.inventory.Slot (true) size 2815]	
+bih=[bih : bih => net.minecraft.client.renderer.texture.TextureMap (true) size 6282]	
+wc=[wc : wc => net.minecraft.inventory.SlotCrafting (true) size 3028]	
+aiv=[aiv : aiv => net.minecraft.world.gen.structure.StructureVillagePieces (true) size 5101]	
+bii=[bii : bii => net.minecraft.client.renderer.texture.TextureAtlasSprite (true) size 6105]	
+vl=[vl : vl => net.minecraft.inventory.ContainerEnchantment (true) size 4973]	
+axj=[axj : axj => net.minecraft.client.gui.inventory.GuiContainerCreative (true) size 15123]	
+ahz=[ahz : ahz => net.minecraft.world.gen.structure.ComponentStrongholdLibrary (true) size 4053]	
+vf=[vf : vf => net.minecraft.inventory.SlotBrewingStandIngredient (true) size 739]	
+vg=[vg : vg => net.minecraft.inventory.SlotBrewingStandPotion (true) size 1088]	
+aie=[aie : aie => net.minecraft.world.gen.structure.ComponentStrongholdRoomCrossing (true) size 3826]	
+vp=[vp : vp => net.minecraft.inventory.SlotFurnace (true) size 2057]	
+vo=[vo : vo => net.minecraft.inventory.ContainerFurnace (true) size 2741]	
+awv=[awv : awv => net.minecraft.client.gui.inventory.GuiContainer (true) size 13698]	
+ahk=[ahk : ahk => net.minecraft.world.gen.structure.ComponentScatteredFeatureDesertPyramid (true) size 6113]	
+uz=[uz : uz => net.minecraft.inventory.ContainerRepair (true) size 7549]	
+ahl=[ahl : ahl => net.minecraft.world.gen.structure.ComponentScatteredFeatureJunglePyramid (true) size 5668]	
+bls=[bls : bls => net.minecraft.stats.StatFileWriter (true) size 6363]	
+blx=[blx : blx => net.minecraft.client.renderer.OpenGlHelper (true) size 1411]	
+dm=[dm : dm => net.minecraft.network.packet.Packet52MultiBlockChange (true) size 2759]	
+ahv=[ahv : ahv => net.minecraft.world.gen.structure.ComponentStrongholdChestCorridor (true) size 2938]	
+blk=[blk : blk => net.minecraft.client.audio.SoundManager (true) size 11312]	
+blq=[blq : blq => net.minecraft.client.gui.GuiMainMenu (true) size 13579]	
+ahp=[ahp : ahp => net.minecraft.world.gen.structure.MapGenStronghold (true) size 3953]	
+ex=[ex : ex => net.minecraft.network.packet.Packet (true) size 7765]	
+b=[b : b => net.minecraft.crash.CrashReport (true) size 6438]	
+ue=[ue : ue => net.minecraft.entity.player.EntityPlayer (true) size 36952]	
+ey=[ey : ey => net.minecraft.network.packet.NetHandler (true) size 9724]	
+bkz=[bkz : bkz => net.minecraft.server.integrated.IntegratedServerListenThread (true) size 2255]	
+ur=[ur : ur => net.minecraft.entity.item.EntityEnderPearl (true) size 2224]	
+m=[m : m => net.minecraft.crash.CrashReportCategory (true) size 4654]	
+j=[j : j => net.minecraft.crash.CallableSuspiciousClasses (true) size 3261]	
+ek=[ek : ek => net.minecraft.network.packet.Packet56MapChunks (true) size 4572]	
+agh=[agh : agh => net.minecraft.world.gen.structure.ComponentMineshaftCorridor (true) size 5760]	
+bkw=[bkw : bkw => net.minecraft.server.integrated.IntegratedServer (true) size 6663]	
+ei=[ei : ei => net.minecraft.network.packet.Packet51MapChunk (true) size 4590]	
+ua=[ua : ua => net.minecraft.entity.passive.EntityVillager (true) size 16725]	
+eo=[eo : eo => net.minecraft.network.packet.Packet1Login (true) size 2313]	
+uc=[uc : uc => net.minecraft.entity.player.InventoryPlayer (true) size 9477]	
+aof=[aof : aof => net.minecraft.block.BlockFire (true) size 9397]	
+tr=[tr : tr => net.minecraft.entity.monster.EntitySlime (true) size 5901]	
+aok=[aok : aok => net.minecraft.block.BlockGrass (true) size 3310]	
+tf=[tf : tf => net.minecraft.entity.monster.EntityEnderman (true) size 9441]	
+bu=[bu : bu => net.minecraft.util.StringTranslate (true) size 2885]	
+aoc=[aoc : aoc => net.minecraft.block.BlockFarmland (true) size 3785]	
+anw=[anw : anw => net.minecraft.block.BlockDoor (true) size 6524]	
+su=[su : su => net.minecraft.entity.item.EntityMinecartContainer (true) size 5210]	
+ano=[ano : ano => net.minecraft.block.BlockCrops (true) size 4745]	
+sv=[sv : sv => net.minecraft.entity.item.EntityMinecartFurnace (true) size 4071]	
+ss=[ss : ss => net.minecraft.entity.item.EntityMinecart (true) size 20428]	
+anm=[anm : anm => net.minecraft.block.BlockComparator (true) size 6119]	
+sw=[sw : sw => net.minecraft.entity.item.EntityMinecartHopper (true) size 3379]	
+sx=[sx : sx => net.minecraft.entity.item.EntityMinecartEmpty (true) size 1152]	
+sl=[sl : sl => net.minecraft.entity.boss.EntityWither (true) size 11112]	
+net.minecraft.client.ClientBrandRetriever=[net/minecraft/client/ClientBrandRetriever : net.minecraft.client.ClientBrandRetriever => net.minecraft.client.ClientBrandRetriever (true) size 593]	
+anh=[anh : anh => net.minecraft.block.BlockChest (true) size 8957]	
+anj=[anj : anj => net.minecraft.block.BlockCocoa (true) size 5240]	
+sr=[sr : sr => net.minecraft.entity.item.EntityItem (true) size 7991]	
+sf=[sf : sf => net.minecraft.entity.boss.IBossDisplayData (true) size 182]	
+anb=[anb : anb => net.minecraft.block.BlockFlower (true) size 3559]	
+anc=[anc : anc => net.minecraft.block.BlockButton (true) size 6964]	
+sj=[sj : sj => net.minecraft.entity.boss.EntityDragon (true) size 12736]	
+and=[and : and => net.minecraft.block.BlockCactus (true) size 4040]	
+amw=[amw : amw => net.minecraft.block.BlockBaseRailLogic (true) size 5680]	
+amv=[amv : amv => net.minecraft.block.BlockRailBase (true) size 4263]	
+cm=[cm : cm => net.minecraft.network.MemoryConnection (true) size 3240]	
+cn=[cn : cn => net.minecraft.network.TcpConnection (true) size 8307]	
+ch=[ch : ch => net.minecraft.nbt.CompressedStreamTools (true) size 3184]	
+rv=[rv : rv => net.minecraft.entity.passive.EntityMooshroom (true) size 2493]	
+rw=[rw : rw => net.minecraft.entity.passive.EntityOcelot (true) size 6568]	
+cf=[cf : cf => net.minecraft.nbt.NBTTagList (true) size 2942]	
+ry=[ry : ry => net.minecraft.entity.passive.EntitySheep (true) size 7337]	
+rl=[rl : rl => net.minecraft.village.VillageCollection (true) size 5751]	
+alp=[alp : alp => net.minecraft.world.storage.WorldInfo (true) size 9344]	
+aln=[aln : aln => net.minecraft.world.storage.SaveHandler (true) size 5737]	
+alj=[alj : alj => net.minecraft.world.chunk.storage.AnvilSaveHandler (true) size 1234]	
+alf=[alf : alf => net.minecraft.world.storage.MapData (true) size 5496]	
+akn=[akn : akn => net.minecraft.world.gen.layer.GenLayer (true) size 3731]	
+aa=[aa : aa => net.minecraft.command.CommandHandler (true) size 4742]	
+bbl=[bbl : bbl => net.minecraft.client.model.ModelBase (true) size 1633]	
+aqv=[aqv : aqv => net.minecraft.block.BlockPane (true) size 4245]	
+aqw=[aqw : aqw => net.minecraft.block.Block (true) size 47835]	
+ns=[ns : ns => net.minecraft.entity.EntityList (true) size 6113]	
+aqs=[aqs : aqs => net.minecraft.block.BlockTallGrass (true) size 3823]	
+net.minecraft.server.MinecraftServer=[net/minecraft/server/MinecraftServer : net.minecraft.server.MinecraftServer => net.minecraft.server.MinecraftServer (true) size 25485]	
+oe=[oe : oe => net.minecraft.entity.EntityLivingBase (true) size 32349]	
+arh=[arh : arh => net.minecraft.block.BlockTripWireSource (true) size 7037]	
+of=[of : of => net.minecraft.entity.EntityLiving (true) size 18597]	
+arg=[arg : arg => net.minecraft.block.BlockLog (true) size 2952]	
+abq=[abq : abq => net.minecraft.world.Explosion (true) size 5891]	
+arf=[arf : arf => net.minecraft.block.BlockTrapDoor (true) size 4620]	
+ard=[ard : ard => net.minecraft.block.BlockTorch (true) size 4649]	
+abv=[abv : abv => net.minecraft.world.World (true) size 62574]	
+arc=[arc : arc => net.minecraft.block.BlockSnow (true) size 3497]	
+bbp=[bbp : bbp => net.minecraft.client.model.TexturedQuad (true) size 1696]	
+arj=[arj : arj => net.minecraft.block.BlockVine (true) size 6536]	
+aru=[aru : aru => net.minecraft.tileentity.TileEntityBrewingStand (true) size 6074]	
+aaa=[aaa : aaa => net.minecraft.item.crafting.FurnaceRecipes (true) size 4015]	
+aae=[aae : aae => net.minecraft.item.crafting.CraftingManager (true) size 13153]	
+art=[art : art => net.minecraft.tileentity.TileEntityBeacon (true) size 6177]	
+aav=[aav : aav => net.minecraft.enchantment.EnchantmentHelper (true) size 7682]	
+aat=[aat : aat => net.minecraft.enchantment.Enchantment (true) size 3893]	
+asd=[asd : asd => net.minecraft.tileentity.TileEntityFurnace (true) size 6407]	
+asq=[asq : asq => net.minecraft.block.BlockPistonBase (true) size 9440]	
+asm=[asm : asm => net.minecraft.tileentity.TileEntity (true) size 6921]	
+aop=[aop : aop => net.minecraft.block.BlockSand (true) size 2351]	
+aoy=[aoy : aoy => net.minecraft.block.BlockLever (true) size 5734]	
+aov=[aov : aov => net.minecraft.block.BlockLadder (true) size 3003]	
+aow=[aow : aow => net.minecraft.block.BlockLeaves (true) size 7573]	
+aoz=[aoz : aoz => net.minecraft.block.BlockFluid (true) size 8956]	
+apa=[apa : apa => net.minecraft.block.BlockFlowing (true) size 5090]	
+api=[api : api => net.minecraft.block.BlockNetherStalk (true) size 3530]	
+aph=[aph : aph => net.minecraft.block.BlockMycelium (true) size 2731]	
+apg=[apg : apg => net.minecraft.block.BlockMushroom (true) size 2377]	
+bdv=[bdv : bdv => net.minecraft.client.particle.EntityFireworkStarterFX (true) size 6752]	
+mj=[mj : mj => net.minecraft.util.WeightedRandomChestContent (true) size 2389]	
+app=[app : app => net.minecraft.block.BlockPortal (true) size 5179]	
+bcm=[bcm : bcm => net.minecraft.client.model.ModelBox (true) size 2433]	
+apv=[apv : apv => net.minecraft.block.BlockPumpkin (true) size 3644]	
+bcc=[bcc : bcc => net.minecraft.client.model.PositionTextureVertex (true) size 892]	
+apy=[apy : apy => net.minecraft.block.BlockRedstoneWire (true) size 8522]	
+bcz=[bcz : bcz => net.minecraft.client.multiplayer.PlayerControllerMP (true) size 8870]	
+bcy=[bcy : bcy => net.minecraft.client.multiplayer.ChunkProviderClient (true) size 2949]	
+aqb=[aqb : aqb => net.minecraft.block.BlockReed (true) size 3170]	
+bda=[bda : bda => net.minecraft.client.multiplayer.WorldClient (true) size 9287]	
+aqf=[aqf : aqf => net.minecraft.block.BlockSapling (true) size 3649]	
+bct=[bct : bct => net.minecraft.client.multiplayer.NetClientHandler (true) size 36762]	
+aqh=[aqh : aqh => net.minecraft.block.BlockSkull (true) size 6382]	
+bcr=[bcr : bcr => net.minecraft.client.model.ModelRenderer (true) size 4781]	
+ni=[ni : ni => net.minecraft.potion.PotionEffect (true) size 5033]	
+bcv=[bcv : bcv => net.minecraft.client.multiplayer.GuiConnecting (true) size 3396]	
+nm=[nm : nm => net.minecraft.entity.Entity (true) size 36725]	
+aqn=[aqn : aqn => net.minecraft.block.BlockStem (true) size 6076]	
+afn=[afn : afn => net.minecraft.world.gen.feature.WorldGenHugeTrees (true) size 4521]	
+bfi=[bfi : bfi => net.minecraft.client.renderer.RenderGlobal (true) size 40467]	
+jx=[jx : jx => net.minecraft.network.NetLoginHandler (true) size 6519]	
+afp=[afp : afp => net.minecraft.world.gen.feature.WorldGenMinable (true) size 2544]	
+jv=[jv : jv => net.minecraft.item.ItemInWorldManager (true) size 7971]	
+afo=[afo : afo => net.minecraft.world.gen.feature.WorldGenDungeons (true) size 3585]	
+jw=[jw : jw => net.minecraft.entity.EntityTrackerEntry (true) size 11005]	
+afq=[afq : afq => net.minecraft.world.gen.feature.WorldGenTaiga1 (true) size 2467]	
+ju=[ju : ju => net.minecraft.entity.player.EntityPlayerMP (true) size 19743]	
+bfg=[bfg : bfg => net.minecraft.client.renderer.ItemRenderer (true) size 14073]	
+jr=[jr : jr => net.minecraft.world.WorldServer (true) size 20019]	
+aff=[aff : aff => net.minecraft.world.gen.feature.WorldGenShrub (true) size 1456]	
+jp=[jp : jp => net.minecraft.server.management.PlayerInstance (true) size 4525]	
+jq=[jq : jq => net.minecraft.world.gen.ChunkProviderServer (true) size 6996]	
+auy=[auy : auy => net.minecraft.client.gui.GuiCreateWorld (true) size 8901]	
+jl=[jl : jl => net.minecraft.entity.EntityTracker (true) size 5493]	
+auv=[auv : auv => net.minecraft.client.gui.GuiControls (true) size 1967]	
+bfo=[bfo : bfo => net.minecraft.client.renderer.RenderBlocks (true) size 122914]	
+afk=[afk : afk => net.minecraft.world.gen.feature.WorldGenBigMushroom (true) size 2773]	
+bfn=[bfn : bfn => net.minecraft.client.renderer.Tessellator (true) size 7118]	
+kc=[kc : kc => net.minecraft.network.NetworkListenThread (true) size 2435]	
+afw=[afw : afw => net.minecraft.world.gen.feature.WorldGenTaiga2 (true) size 2803]	
+afx=[afx : afx => net.minecraft.world.gen.feature.WorldGenSwamp (true) size 3186]	
+afy=[afy : afy => net.minecraft.world.gen.feature.WorldGenTallGrass (true) size 1109]	
+avg=[avg : avg => net.minecraft.client.gui.GuiIngame (true) size 19967]	
+afz=[afz : afz => net.minecraft.world.gen.feature.WorldGenTrees (true) size 4288]	
+jz=[jz : jz => net.minecraft.network.NetServerHandler (true) size 23091]	
+aeo=[aeo : aeo => net.minecraft.world.gen.ChunkProviderHell (true) size 12943]	
+ael=[ael : ael => net.minecraft.world.gen.MapGenRavine (true) size 5323]	
+awd=[awd : awd => net.minecraft.client.gui.GuiSlot (true) size 7189]	
+kz=[kz : kz => net.minecraft.stats.StatList (true) size 6201]	
+aes=[aes : aes => net.minecraft.world.gen.ChunkProviderGenerate (true) size 13524]	
+bee=[bee : bee => net.minecraft.client.particle.EffectRenderer (true) size 5644]	
+aep=[aep : aep => net.minecraft.world.gen.MapGenCaves (true) size 5736]	
+bep=[bep : bep => net.minecraft.client.particle.EntityDiggingFX (true) size 2881]	
+aed=[aed : aed => net.minecraft.world.chunk.storage.AnvilChunkLoader (true) size 10370]	
+aeh=[aeh : aeh => net.minecraft.world.WorldProvider (true) size 9582]	
+bex=[bex : bex => net.minecraft.client.renderer.WorldRenderer (true) size 5157]	
+awn=[awn : awn => net.minecraft.client.gui.achievement.GuiAchievements (true) size 9923]	
+beu=[beu : beu => net.minecraft.client.entity.EntityPlayerSP (true) size 11382]	
+afb=[afb : afb => net.minecraft.world.gen.feature.WorldGenDeadBush (true) size 1040]	
+lf=[lf : lf => net.minecraft.util.CryptManager (true) size 5162]	
+aev=[aev : aev => net.minecraft.world.gen.feature.WorldGenBigTree (true) size 7224]	
+bfb=[bfb : bfb => net.minecraft.client.renderer.EntityRenderer (true) size 28486]	
+aew=[aew : aew => net.minecraft.world.gen.feature.WorldGenForest (true) size 2541]	
+aet=[aet : aet => net.minecraft.world.gen.ChunkProviderEnd (true) size 8482]	
+lb=[lb : lb => net.minecraft.logging.LogAgent (true) size 2730]	
+bhg=[bhg : bhg => net.minecraft.client.renderer.entity.RenderPlayer (true) size 13466]	
+zg=[zg : zg => net.minecraft.item.ItemBlock (true) size 3855]	
+adq=[adq : adq => net.minecraft.world.chunk.Chunk (true) size 21412]	
+bhl=[bhl : bhl => net.minecraft.client.renderer.entity.RenderSnowMan (true) size 2777]	
+bhr=[bhr : bhr => net.minecraft.client.renderer.entity.RenderVillager (true) size 2882]	
+asx=[asx : asx => net.minecraft.util.MovingObjectPosition (true) size 1081]	
+hm=[hm : hm => net.minecraft.server.management.ServerConfigurationManager (true) size 19730]	
+zy=[zy : zy => net.minecraft.item.crafting.RecipeFireworks (true) size 3773]	
+bid=[bid : bid => net.minecraft.client.renderer.texture.Stitcher (true) size 4303]	
+yg=[yg : yg => net.minecraft.item.ItemMap (true) size 6143]	
+acp=[acp : acp => net.minecraft.world.biome.BiomeGenBase (true) size 8816]	
+yh=[yh : yh => net.minecraft.item.ItemBucketMilk (true) size 1145]	
+ir=[ir : ir => net.minecraft.server.dedicated.DedicatedServer (true) size 9968]	
+yc=[yc : yc => net.minecraft.item.EnumToolMaterial (true) size 2100]	
+yd=[yd : yd => net.minecraft.item.ItemStack (true) size 14629]	
+ya=[ya : ya => net.minecraft.item.ItemHoe (true) size 2422]	
+ack=[ack : ack => net.minecraft.world.ChunkCache (true) size 6497]	
+bgi=[bgi : bgi => net.minecraft.client.renderer.entity.RenderManager (true) size 9404]	
+yb=[yb : yb => net.minecraft.item.Item (true) size 30734]	
+ix=[ix : ix => net.minecraft.server.ServerListenThread (true) size 3680]	
+ats=[ats : ats => net.minecraft.client.Minecraft (true) size 38091]	
+ach=[ach : ach => net.minecraft.world.SpawnerAnimals (true) size 7002]	
+acf=[acf : acf => net.minecraft.world.WorldType (true) size 5531]	
+bgt=[bgt : bgt => net.minecraft.client.renderer.entity.RenderItem (true) size 11801]	
+ace=[ace : ace => net.minecraft.world.IBlockAccess (true) size 752]	
+bgr=[bgr : bgr => net.minecraft.client.renderer.entity.RenderBiped (true) size 9300]	
+yw=[yw : yw => net.minecraft.item.ItemShears (true) size 3596]	
+yv=[yv : yv => net.minecraft.item.ItemSeeds (true) size 2008]	
+yu=[yu : yu => net.minecraft.item.ItemSeedFood (true) size 1895]	
+jd=[jd : jd => net.minecraft.server.gui.StatsComponent (false) size 4603]	
+bgy=[bgy : bgy => net.minecraft.client.renderer.entity.RendererLivingEntity (true) size 11605]	
+act=[act : act => net.minecraft.world.biome.BiomeDecorator (true) size 9242]	
+acu=[acu : acu => net.minecraft.world.biome.WorldChunkManager (true) size 5290]	
+aui=[aui : aui => net.minecraft.client.settings.GameSettings (true) size 15902]
+2013-08-18 15:42:03 [INFO] [ForgeModLoader] Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+2013-08-18 15:42:03 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.ClientBrandRetriever (input size 303), found 1 patch
+2013-08-18 15:42:03 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.ClientBrandRetriever (new size 685)
+2013-08-18 15:42:03 [INFO] [ForgeModLoader] Found valid fingerprint for Minecraft. Certificate fingerprint cd99959656f753dc28d863b46769f7f8fbaefcfc
+2013-08-18 15:42:03 [FINE] [ForgeModLoader] Coremod plugin FMLCorePlugin run successfully
+2013-08-18 15:42:03 [FINE] [ForgeModLoader] Running coremod plugin FMLForgePlugin
+2013-08-18 15:42:03 [FINE] [ForgeModLoader] Coremod plugin FMLForgePlugin run successfully
+2013-08-18 15:42:03 [FINE] [ForgeModLoader] Running coremod plugin BetterTradeLoadingPlugin
+2013-08-18 15:42:03 [FINE] [ForgeModLoader] Coremod plugin BetterTradeLoadingPlugin run successfully
+2013-08-18 15:42:03 [FINE] [ForgeModLoader] Validating minecraft
+2013-08-18 15:42:04 [FINE] [ForgeModLoader] Minecraft validated, launching...
+2013-08-18 15:42:04 [INFO] [ForgeModLoader] Launching wrapped minecraft
+2013-08-18 15:42:06 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.Minecraft (input size 35287), found 1 patch
+2013-08-18 15:42:06 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.Minecraft (new size 41312)
+2013-08-18 15:42:07 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.world.World (input size 45378), found 1 patch
+2013-08-18 15:42:07 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.world.World (new size 65834)
+2013-08-18 15:42:07 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.world.IBlockAccess (input size 367), found 1 patch
+2013-08-18 15:42:07 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.world.IBlockAccess (new size 743)
+2013-08-18 15:42:07 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.multiplayer.WorldClient (input size 7164), found 1 patch
+2013-08-18 15:42:07 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.multiplayer.WorldClient (new size 9616)
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.gui.GuiIngame (input size 16614), found 1 patch
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.gui.GuiIngame (new size 20804)
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.gui.GuiIngame (input size 16614), found 1 patch
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.gui.GuiIngame (new size 20804)
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.gui.GuiMainMenu (input size 12121), found 1 patch
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.gui.GuiMainMenu (new size 14850)
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.multiplayer.GuiConnecting (input size 2649), found 1 patch
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.multiplayer.GuiConnecting (new size 3652)
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.EntityLivingBase (input size 26398), found 1 patch
+2013-08-18 15:42:08 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.EntityLivingBase (new size 33378)
+2013-08-18 15:42:09 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.Entity (input size 26866), found 1 patch
+2013-08-18 15:42:09 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.Entity (new size 38524)
+2013-08-18 15:42:10 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.entity.EntityPlayerSP (input size 9159), found 1 patch
+2013-08-18 15:42:10 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.entity.EntityPlayerSP (new size 11814)
+2013-08-18 15:42:10 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.player.EntityPlayer (input size 25637), found 1 patch
+2013-08-18 15:42:10 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.player.EntityPlayer (new size 37826)
+2013-08-18 15:42:10 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.gui.inventory.GuiContainer (input size 11952), found 1 patch
+2013-08-18 15:42:10 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.gui.inventory.GuiContainer (new size 14207)
+2013-08-18 15:42:10 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.util.ResourceLocation (input size 1404), found 1 patch
+2013-08-18 15:42:10 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.util.ResourceLocation (new size 1749)
+2013-08-18 15:42:11 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.server.MinecraftServer (input size 18655), found 1 patch
+2013-08-18 15:42:11 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.server.MinecraftServer (new size 27332)
+2013-08-18 15:42:11 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.world.WorldServer (input size 15048), found 1 patch
+2013-08-18 15:42:11 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.world.WorldServer (new size 20910)
+2013-08-18 15:42:11 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.network.packet.Packet (input size 7307), found 1 patch
+2013-08-18 15:42:11 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.network.packet.Packet (new size 8741)
+2013-08-18 15:42:12 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.logging.LogAgent (input size 2400), found 1 patch
+2013-08-18 15:42:12 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.logging.LogAgent (new size 3379)
+2013-08-18 15:42:12 [INFO] [Minecraft-Client] Setting user: GoldCrafter2013
+2013-08-18 15:42:12 [INFO] [Minecraft-Client] (Session ID is token:c3ad945c535a45399ffed2f104bd252b:1b30750fdfc04ce7851916ea5be1d20a)
+2013-08-18 15:42:12 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.stats.StatList (input size 5774), found 1 patch
+2013-08-18 15:42:12 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.stats.StatList (new size 6557)
+2013-08-18 15:42:12 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.Block (input size 30308), found 1 patch
+2013-08-18 15:42:12 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.Block (new size 49109)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.item.EntityItem (input size 5615), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.item.EntityItem (new size 8318)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.creativetab.CreativeTabs (input size 3544), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.creativetab.CreativeTabs (new size 5751)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockGrass (input size 2419), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockGrass (new size 3500)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockSapling (input size 2895), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockSapling (new size 3914)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockFlower (input size 1521), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockFlower (new size 3588)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockFlowing (input size 4256), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockFlowing (new size 5156)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockFluid (input size 7019), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockFluid (new size 9590)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockSand (input size 1643), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockSand (new size 2370)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockLog (input size 2019), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockLog (new size 3135)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockLeaves (input size 5721), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockLeaves (new size 8191)
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.tileentity.TileEntity (input size 4609), found 1 patch
+2013-08-18 15:42:13 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.tileentity.TileEntity (new size 7537)
+2013-08-18 15:42:14 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockRailBase (input size 2404), found 1 patch
+2013-08-18 15:42:14 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockRailBase (new size 4363)
+2013-08-18 15:42:14 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockPistonBase (input size 7463), found 1 patch
+2013-08-18 15:42:14 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockPistonBase (new size 9704)
+2013-08-18 15:42:14 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockTallGrass (input size 2180), found 1 patch
+2013-08-18 15:42:14 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockTallGrass (new size 3946)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockMushroom (input size 1825), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockMushroom (new size 2645)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockTorch (input size 3338), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockTorch (new size 4781)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockFire (input size 6323), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockFire (new size 9610)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockChest (input size 7113), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockChest (new size 9237)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockRedstoneWire (input size 6640), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockRedstoneWire (new size 8844)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockCrops (input size 3092), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockCrops (new size 4989)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockFarmland (input size 2760), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockFarmland (new size 4018)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.tileentity.TileEntityFurnace (input size 5347), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.tileentity.TileEntityFurnace (new size 6635)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockDoor (input size 5421), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockDoor (new size 7081)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockLadder (input size 1753), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockLadder (new size 3071)
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockLever (input size 4434), found 1 patch
+2013-08-18 15:42:15 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockLever (new size 5947)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockButton (input size 4976), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockButton (new size 7195)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockSnow (input size 2463), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockSnow (new size 3572)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockCactus (input size 2379), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockCactus (new size 4171)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockReed (input size 1795), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockReed (new size 3227)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockPumpkin (input size 2970), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockPumpkin (new size 3783)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.EntityLiving (input size 16004), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.EntityLiving (new size 19265)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockPortal (input size 4091), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockPortal (new size 5427)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockTrapDoor (input size 2843), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockTrapDoor (new size 4791)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockPane (input size 2604), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockPane (new size 4351)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockStem (input size 3890), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockStem (new size 6269)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockVine (input size 5081), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockVine (new size 6985)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockMycelium (input size 1959), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockMycelium (new size 2864)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockNetherStalk (input size 1999), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockNetherStalk (new size 3680)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.tileentity.TileEntityBrewingStand (input size 4856), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.tileentity.TileEntityBrewingStand (new size 6439)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.Item (input size 22269), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.Item (new size 31823)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockCocoa (input size 3260), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockCocoa (new size 5439)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockTripWireSource (input size 5544), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockTripWireSource (new size 7403)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.tileentity.TileEntityBeacon (input size 4865), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.tileentity.TileEntityBeacon (new size 6306)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockSkull (input size 4805), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockSkull (new size 6663)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.boss.EntityWither (input size 9009), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.boss.EntityWither (new size 11369)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.boss.IBossDisplayData (input size 143), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.boss.IBossDisplayData (new size 175)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.BlockComparator (input size 4213), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.BlockComparator (new size 6288)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemTool (input size 1663), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemTool (new size 2748)
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.EnumToolMaterial (input size 1646), found 1 patch
+2013-08-18 15:42:16 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.EnumToolMaterial (new size 2216)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemBlock (input size 2481), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemBlock (new size 4088)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemFlintAndSteel (input size 952), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemFlintAndSteel (new size 1283)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemBow (input size 2604), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemBow (new size 4035)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.nbt.NBTTagList (input size 2458), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.nbt.NBTTagList (new size 3235)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemHoe (input size 1212), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemHoe (new size 2467)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemSeeds (input size 679), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemSeeds (new size 2023)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemArmor (input size 3505), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemArmor (new size 4454)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.BehaviorDispenseArmor (input size 1099), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.BehaviorDispenseArmor (new size 1521)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.EnumArmorMaterial (input size 1536), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.EnumArmorMaterial (new size 2073)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemBucket (input size 2578), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemBucket (new size 3684)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.item.EntityMinecart (input size 14693), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.item.EntityMinecart (new size 21351)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemBucketMilk (input size 828), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemBucketMilk (new size 1153)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemDye (input size 5221), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemDye (new size 7521)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.player.EntityPlayer (input size 25637), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.player.EntityPlayer (new size 37826)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemMap (input size 5645), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemMap (new size 6631)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.world.storage.MapData (input size 4692), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.world.storage.MapData (new size 6010)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemShears (input size 1037), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemShears (new size 3599)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.item.EntityEnderPearl (input size 1241), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.item.EntityEnderPearl (new size 2241)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemSeedFood (input size 625), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemSeedFood (new size 1911)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemEmptyMap (input size 1301), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemEmptyMap (new size 1643)
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.util.StringTranslate (input size 3081), found 1 patch
+2013-08-18 15:42:17 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.util.StringTranslate (new size 3772)
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.crafting.CraftingManager (input size 12618), found 1 patch
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.crafting.CraftingManager (new size 13567)
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.ItemStack (input size 11944), found 1 patch
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.ItemStack (new size 15716)
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.crafting.RecipeFireworks (input size 3419), found 1 patch
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.crafting.RecipeFireworks (new size 3972)
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.item.crafting.FurnaceRecipes (input size 2402), found 1 patch
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.item.crafting.FurnaceRecipes (new size 4143)
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.settings.GameSettings (input size 15787), found 1 patch
+2013-08-18 15:42:18 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.settings.GameSettings (new size 17121)
+2013-08-18 15:42:19 [INFO] [Minecraft-Client] LWJGL Version: 2.9.0
+2013-08-18 15:42:19 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.block.Block (input size 30308), found 1 patch
+2013-08-18 15:42:19 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.block.Block (new size 49109)
+2013-08-18 15:42:21 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.OpenGlHelper (input size 1054), found 1 patch
+2013-08-18 15:42:21 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.OpenGlHelper (new size 1587)
+2013-08-18 15:42:21 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.entity.RenderItem (input size 8123), found 1 patch
+2013-08-18 15:42:21 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.entity.RenderItem (new size 12018)
+2013-08-18 15:42:21 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.RenderBlocks (input size 115770), found 1 patch
+2013-08-18 15:42:21 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.RenderBlocks (new size 128069)
+2013-08-18 15:42:21 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.world.biome.WorldChunkManager (input size 3382), found 1 patch
+2013-08-18 15:42:21 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.world.biome.WorldChunkManager (new size 5661)
+2013-08-18 15:42:22 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.resources.LanguageManager (input size 2874), found 1 patch
+2013-08-18 15:42:22 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.resources.LanguageManager (new size 3867)
+2013-08-18 15:42:22 [INFO] [Minecraft-Client] Reloading ResourceManager: Default
+2013-08-18 15:42:22 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.audio.SoundManager (input size 9197), found 1 patch
+2013-08-18 15:42:22 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.audio.SoundManager (new size 12543)
+2013-08-18 15:42:24 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.server.integrated.IntegratedServer (input size 5418), found 1 patch
+2013-08-18 15:42:24 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.server.integrated.IntegratedServer (new size 7485)
+2013-08-18 15:42:24 [INFO] [STDOUT] 
+2013-08-18 15:42:24 [INFO] [STDOUT] Starting up SoundSystem...
+2013-08-18 15:42:24 [INFO] [STDOUT] Initializing LWJGL OpenAL
+2013-08-18 15:42:24 [INFO] [STDOUT]     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+2013-08-18 15:42:24 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.Tessellator (input size 6041), found 1 patch
+2013-08-18 15:42:24 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.Tessellator (new size 7856)
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.server.dedicated.DedicatedServer (input size 9381), found 1 patch
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.server.dedicated.DedicatedServer (new size 11602)
+2013-08-18 15:42:25 [INFO] [MinecraftForge] Attempting early MinecraftForge initialization
+2013-08-18 15:42:25 [INFO] [STDOUT] MinecraftForge v9.10.0.827 Initialized
+2013-08-18 15:42:25 [INFO] [ForgeModLoader] MinecraftForge v9.10.0.827 Initialized
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.monster.EntityEnderman (input size 7850), found 1 patch
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.monster.EntityEnderman (new size 9717)
+2013-08-18 15:42:25 [INFO] [STDOUT] Replaced 101 ore recipies
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.crash.CrashReport (input size 6379), found 1 patch
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.crash.CrashReport (new size 7918)
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.crash.CrashReportCategory (input size 4185), found 1 patch
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.crash.CrashReportCategory (new size 5656)
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.crash.CallableSuspiciousClasses (input size 3241), found 1 patch
+2013-08-18 15:42:25 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.crash.CallableSuspiciousClasses (new size 3877)
+2013-08-18 15:42:25 [INFO] [MinecraftForge] Completed early MinecraftForge initialization
+2013-08-18 15:42:26 [INFO] [ForgeModLoader] Reading custom logging properties from C:\Users\Kamakwazee\AppData\Roaming\.minecraft\config\logging.properties
+2013-08-18 15:42:26 [OFF] [ForgeModLoader] Logging level for ForgeModLoader logging is set to ALL
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Building injected Mod Containers [cpw.mods.fml.common.FMLDummyContainer, net.minecraftforge.common.ForgeDummyContainer, bettertrade.core.BetterTradeDummyContainer]
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Attempting to load mods contained in the minecraft jar file and associated classes
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\minecraftforge\minecraftforge\9.10.0.827\minecraftforge-9.10.0.827.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\minecraft\launchwrapper\1.3\launchwrapper-1.3.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\ow2\asm\asm-all\4.1\asm-all-4.1.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.0\lwjgl-2.9.0.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.0\lwjgl_util-2.9.0.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\argo\argo\2.25_fixed\argo-2.25_fixed.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\bouncycastle\bcprov-jdk15on\1.47\bcprov-jdk15on-1.47.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\google\guava\guava\14.0\guava-14.0.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\com\google\code\gson\gson\2.2.2\gson-2.2.2.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.0\lwjgl-2.9.0.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.0\lwjgl_util-2.9.0.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\Kamakwazee\AppData\Roaming\.minecraft\versions\1.6.2-Forge9.10.0.827\1.6.2-Forge9.10.0.827.jar, examining for mod candidates
+2013-08-18 15:42:26 [FINER] [ForgeModLoader] Skipping known library file C:\Users\Kamakwazee\AppData\Roaming\.minecraft\mods\BetterTradeCore.jar
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Minecraft jar mods loaded successfully
+2013-08-18 15:42:26 [INFO] [ForgeModLoader] Searching C:\Users\Kamakwazee\AppData\Roaming\.minecraft\mods for mods
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a candidate zip or jar file BetterTrade.zip
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Found a candidate zip or jar file BetterTradeCore.jar
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] Examining file minecraftforge-9.10.0.827.jar for potential mods
+2013-08-18 15:42:26 [FINE] [ForgeModLoader] The mod container minecraftforge-9.10.0.827.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file launchwrapper-1.3.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container launchwrapper-1.3.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file asm-all-4.1.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container asm-all-4.1.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file jopt-simple-4.5.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container jopt-simple-4.5.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file lzma-0.0.1.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container lzma-0.0.1.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file codecjorbis-20101023.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container codecjorbis-20101023.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file codecwav-20101023.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container codecwav-20101023.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file libraryjavasound-20101123.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container libraryjavasound-20101123.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file librarylwjglopenal-20100824.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container librarylwjglopenal-20100824.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file soundsystem-20120107.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container soundsystem-20120107.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file lwjgl-2.9.0.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container lwjgl-2.9.0.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file lwjgl_util-2.9.0.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container lwjgl_util-2.9.0.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file argo-2.25_fixed.jar for potential mods
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container argo-2.25_fixed.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] Examining file bcprov-jdk15on-1.47.jar for potential mods
+2013-08-18 15:42:28 [INFO] [STDOUT] OpenAL initialized.
+2013-08-18 15:42:28 [INFO] [STDOUT] 
+2013-08-18 15:42:28 [FINE] [ForgeModLoader] The mod container bcprov-jdk15on-1.47.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:30 [FINE] [ForgeModLoader] Examining file guava-14.0.jar for potential mods
+2013-08-18 15:42:30 [FINE] [ForgeModLoader] The mod container guava-14.0.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:30 [FINE] [ForgeModLoader] Examining file commons-lang3-3.1.jar for potential mods
+2013-08-18 15:42:30 [FINE] [ForgeModLoader] The mod container commons-lang3-3.1.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:30 [FINE] [ForgeModLoader] Examining file commons-io-2.4.jar for potential mods
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] The mod container commons-io-2.4.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] Examining file jinput-2.0.5.jar for potential mods
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] The mod container jinput-2.0.5.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] Examining file jutils-1.0.0.jar for potential mods
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] The mod container jutils-1.0.0.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] Examining file gson-2.2.2.jar for potential mods
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] The mod container gson-2.2.2.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] Examining file lwjgl-2.9.0.jar for potential mods
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] The mod container lwjgl-2.9.0.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] Examining file lwjgl_util-2.9.0.jar for potential mods
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] The mod container lwjgl_util-2.9.0.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] Examining file 1.6.2-Forge9.10.0.827.jar for potential mods
+2013-08-18 15:42:31 [FINE] [ForgeModLoader] The mod container 1.6.2-Forge9.10.0.827.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:32 [FINE] [ForgeModLoader] Examining file BetterTrade.zip for potential mods
+2013-08-18 15:42:32 [FINE] [ForgeModLoader] The mod container BetterTrade.zip appears to be missing an mcmod.info file
+2013-08-18 15:42:32 [FINE] [ForgeModLoader] Identified an FMLMod type mod bettertrade.BetterTrade
+2013-08-18 15:42:33 [FINEST] [bettertrade] Parsed dependency info : [] [] []
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Examining file BetterTradeCore.jar for potential mods
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] The mod container BetterTradeCore.jar appears to be missing an mcmod.info file
+2013-08-18 15:42:33 [INFO] [ForgeModLoader] Forge Mod Loader has identified 5 mods to load
+2013-08-18 15:42:33 [FINER] [ForgeModLoader] Received a system property request ''
+2013-08-18 15:42:33 [FINER] [ForgeModLoader] System property request managing the state of 0 mods
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] After merging, found state information for 0 mods
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Reloading logging properties from C:\Users\Kamakwazee\AppData\Roaming\.minecraft\config\logging.properties
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Reloaded logging properties
+2013-08-18 15:42:33 [FINE] [mcp] Mod Logging channel mcp configured at default level.
+2013-08-18 15:42:33 [INFO] [mcp] Activating mod mcp
+2013-08-18 15:42:33 [FINE] [FML] Mod Logging channel FML configured at default level.
+2013-08-18 15:42:33 [INFO] [FML] Activating mod FML
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.world.storage.SaveHandler (input size 4811), found 1 patch
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.world.storage.SaveHandler (new size 6395)
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.world.storage.WorldInfo (input size 7216), found 1 patch
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.world.storage.WorldInfo (new size 9831)
+2013-08-18 15:42:33 [FINE] [Forge] Mod Logging channel Forge configured at default level.
+2013-08-18 15:42:33 [INFO] [Forge] Activating mod Forge
+2013-08-18 15:42:33 [FINE] [bettertradecore] Mod Logging channel bettertradecore configured at default level.
+2013-08-18 15:42:33 [INFO] [bettertradecore] Activating mod bettertradecore
+2013-08-18 15:42:33 [FINE] [bettertrade] Enabling mod bettertrade
+2013-08-18 15:42:33 [FINE] [bettertrade] Mod Logging channel bettertrade configured at default level.
+2013-08-18 15:42:33 [INFO] [bettertrade] Activating mod bettertrade
+2013-08-18 15:42:33 [WARNING] [Better Villager Trades] Mod Better Villager Trades is missing a pack.mcmeta file, things may not work well
+2013-08-18 15:42:33 [INFO] [Minecraft-Client] Reloading ResourceManager: Default, FMLFileResourcePack:Better Villager Trades
+2013-08-18 15:42:33 [INFO] [STDOUT] 
+2013-08-18 15:42:33 [INFO] [STDOUT] SoundSystem shutting down...
+2013-08-18 15:42:33 [INFO] [STDOUT]     Author: Paul Lamb, www.paulscode.com
+2013-08-18 15:42:33 [INFO] [STDOUT] 
+2013-08-18 15:42:33 [FINER] [ForgeModLoader] Verifying mod requirements are satisfied
+2013-08-18 15:42:33 [FINER] [ForgeModLoader] All mod requirements are satisfied
+2013-08-18 15:42:33 [INFO] [STDOUT] 
+2013-08-18 15:42:33 [INFO] [STDOUT] Starting up SoundSystem...
+2013-08-18 15:42:33 [FINER] [ForgeModLoader] Sorting mods into an ordered list
+2013-08-18 15:42:33 [FINER] [ForgeModLoader] Mod sorting completed successfully
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Mod sorting data
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] 	bettertrade(Better Villager Trades:1.2.2): BetterTrade.zip ()
+2013-08-18 15:42:33 [INFO] [ForgeModLoader] FML has found a non-mod file BetterTradeCore.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+2013-08-18 15:42:33 [FINEST] [mcp] Sending event FMLConstructionEvent to mod mcp
+2013-08-18 15:42:33 [FINEST] [mcp] Sent event FMLConstructionEvent to mod mcp
+2013-08-18 15:42:33 [FINEST] [FML] Sending event FMLConstructionEvent to mod FML
+2013-08-18 15:42:33 [FINEST] [FML] Sent event FMLConstructionEvent to mod FML
+2013-08-18 15:42:33 [FINEST] [Forge] Sending event FMLConstructionEvent to mod Forge
+2013-08-18 15:42:33 [INFO] [ForgeModLoader] Registering Forge Packet Handler
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.player.EntityPlayerMP (input size 16046), found 1 patch
+2013-08-18 15:42:33 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.player.EntityPlayerMP (new size 20724)
+2013-08-18 15:42:34 [FINEST] [ForgeModLoader] Testing mod Forge to verify it accepts its own version in a remote connection
+2013-08-18 15:42:34 [FINEST] [ForgeModLoader] The mod Forge accepts its own version (9.10.0.827)
+2013-08-18 15:42:34 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.network.packet.NetHandler (input size 4778), found 1 patch
+2013-08-18 15:42:34 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.network.packet.NetHandler (new size 9784)
+2013-08-18 15:42:34 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.network.NetServerHandler (input size 19321), found 1 patch
+2013-08-18 15:42:34 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.network.NetServerHandler (new size 24530)
+2013-08-18 15:42:34 [INFO] [STDOUT] Initializing LWJGL OpenAL
+2013-08-18 15:42:34 [INFO] [STDOUT]     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+2013-08-18 15:42:34 [INFO] [ForgeModLoader] Succeeded registering Forge Packet Handler
+2013-08-18 15:42:34 [FINEST] [Forge] Sent event FMLConstructionEvent to mod Forge
+2013-08-18 15:42:34 [FINEST] [bettertradecore] Sending event FMLConstructionEvent to mod bettertradecore
+2013-08-18 15:42:34 [FINEST] [bettertradecore] Sent event FMLConstructionEvent to mod bettertradecore
+2013-08-18 15:42:34 [FINEST] [bettertrade] Sending event FMLConstructionEvent to mod bettertrade
+2013-08-18 15:42:35 [FINEST] [ForgeModLoader] Testing mod bettertrade to verify it accepts its own version in a remote connection
+2013-08-18 15:42:35 [FINEST] [ForgeModLoader] The mod bettertrade accepts its own version (1.2.2)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Attempting to inject @SidedProxy classes into bettertrade
+2013-08-18 15:42:35 [FINEST] [bettertrade] Sent event FMLConstructionEvent to mod bettertrade
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Mod signature data
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] 	mcp(Minecraft Coder Pack:8.04): minecraft.jar (NO VALID CERTIFICATE FOUND)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] 	FML(Forge Mod Loader:6.2.43.827): coremods (e3c3d50c7c986df74c645c0ac54639741c90a557)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] 	Forge(Minecraft Forge:9.10.0.827): coremods (NO VALID CERTIFICATE FOUND)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] 	bettertradecore(Better Trade Core:1.2.2): coremods (NO VALID CERTIFICATE FOUND)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] 	bettertrade(Better Villager Trades:1.2.2): BetterTrade.zip (NO VALID CERTIFICATE FOUND)
+2013-08-18 15:42:35 [FINEST] [mcp] Sending event FMLPreInitializationEvent to mod mcp
+2013-08-18 15:42:35 [FINEST] [mcp] Sent event FMLPreInitializationEvent to mod mcp
+2013-08-18 15:42:35 [FINEST] [FML] Sending event FMLPreInitializationEvent to mod FML
+2013-08-18 15:42:35 [FINEST] [FML] Sent event FMLPreInitializationEvent to mod FML
+2013-08-18 15:42:35 [FINEST] [Forge] Sending event FMLPreInitializationEvent to mod Forge
+2013-08-18 15:42:35 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+2013-08-18 15:42:35 [FINEST] [Forge] Sent event FMLPreInitializationEvent to mod Forge
+2013-08-18 15:42:35 [FINEST] [bettertradecore] Sending event FMLPreInitializationEvent to mod bettertradecore
+2013-08-18 15:42:35 [FINEST] [bettertradecore] Sent event FMLPreInitializationEvent to mod bettertradecore
+2013-08-18 15:42:35 [FINEST] [bettertrade] Sending event FMLPreInitializationEvent to mod bettertrade
+2013-08-18 15:42:35 [FINEST] [bettertrade] Sent event FMLPreInitializationEvent to mod bettertrade
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.entity.RenderManager (input size 8199), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.entity.RenderManager (new size 9825)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.model.ModelBase (input size 1205), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.model.ModelBase (new size 1799)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.entity.RendererLivingEntity (input size 8451), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.entity.RendererLivingEntity (new size 11844)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.model.ModelRenderer (input size 3799), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.model.ModelRenderer (new size 4939)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.model.ModelBox (input size 1836), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.model.ModelBox (new size 2719)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.model.PositionTextureVertex (input size 565), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.model.PositionTextureVertex (new size 914)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.model.TexturedQuad (input size 1246), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.model.TexturedQuad (new size 1749)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.passive.EntitySheep (input size 5833), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.passive.EntitySheep (new size 7520)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.passive.EntityMooshroom (input size 1667), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.passive.EntityMooshroom (new size 2521)
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.passive.EntityOcelot (input size 5673), found 1 patch
+2013-08-18 15:42:35 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.passive.EntityOcelot (new size 6765)
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.entity.RenderSnowMan (input size 1446), found 1 patch
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.entity.RenderSnowMan (new size 2807)
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.entity.RenderBiped (input size 6055), found 1 patch
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.entity.RenderBiped (new size 9691)
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.monster.EntitySlime (input size 5159), found 1 patch
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.monster.EntitySlime (new size 6093)
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.client.renderer.entity.RenderPlayer (input size 8845), found 1 patch
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.client.renderer.entity.RenderPlayer (new size 13781)
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Runtime patching class net.minecraft.entity.passive.EntityVillager (input size 14888), found 1 patch
+2013-08-18 15:42:36 [FINE] [ForgeModLoader] Successfully applied runtime patches for net.minecraft.entity.passive.EntityVillager (new size 17345)
+2013-08-18 15:42:36 [INFO] [STDOUT] ************ INSIDE ENTITY TRANSFORMER ABOUT TO PATCH: ua
+2013-08-18 15:42:36 [INFO] [STDOUT] [BetterTrades]: Class ua patched!
+2013-08-18 15:42:38 [INFO] [STDOUT] ---- Minecraft Crash Report ----
+2013-08-18 15:42:38 [INFO] [STDOUT] // Surprise! Haha. Well, this is awkward.
+2013-08-18 15:42:38 [INFO] [STDOUT] 
+2013-08-18 15:42:38 [INFO] [STDOUT] Time: 8/18/13 3:42 PM
+2013-08-18 15:42:38 [INFO] [STDOUT] Description: Initializing game
+2013-08-18 15:42:38 [INFO] [STDOUT] 
+2013-08-18 15:42:38 [INFO] [STDOUT] java.lang.NoClassDefFoundError: net/minecraft/entity/passive/EntityVillager
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.renderer.entity.RenderManager.<init>(RenderManager.java:152)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.renderer.entity.RenderManager.<clinit>(RenderManager.java:101)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:483)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:796)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.main.Main.main(SourceFile:101)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at java.lang.reflect.Method.invoke(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:57)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.launchwrapper.Launch.main(Launch.java:18)
+2013-08-18 15:42:38 [INFO] [STDOUT] Caused by: java.lang.ClassNotFoundException: net.minecraft.entity.passive.EntityVillager
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:179)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at java.lang.ClassLoader.loadClass(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at java.lang.ClassLoader.loadClass(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	... 11 more
+2013-08-18 15:42:38 [INFO] [STDOUT] Caused by: java.lang.NullPointerException
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at org.objectweb.asm.Type.getArgumentTypes(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at org.objectweb.asm.commons.Remapper.mapMethodDesc(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at org.objectweb.asm.commons.RemappingClassAdapter.visitMethod(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at org.objectweb.asm.ClassReader.b(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at org.objectweb.asm.ClassReader.accept(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at org.objectweb.asm.ClassReader.accept(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at cpw.mods.fml.common.asm.transformers.DeobfuscationTransformer.transform(DeobfuscationTransformer.java:39)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:267)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:165)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	... 13 more
+2013-08-18 15:42:38 [INFO] [STDOUT] 
+2013-08-18 15:42:38 [INFO] [STDOUT] 
+2013-08-18 15:42:38 [INFO] [STDOUT] A detailed walkthrough of the error, its code path and all known details is as follows:
+2013-08-18 15:42:38 [INFO] [STDOUT] ---------------------------------------------------------------------------------------
+2013-08-18 15:42:38 [INFO] [STDOUT] 
+2013-08-18 15:42:38 [INFO] [STDOUT] -- Head --
+2013-08-18 15:42:38 [INFO] [STDOUT] Stacktrace:
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.renderer.entity.RenderManager.<init>(RenderManager.java:152)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.renderer.entity.RenderManager.<clinit>(RenderManager.java:101)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:483)
+2013-08-18 15:42:38 [INFO] [STDOUT] 
+2013-08-18 15:42:38 [INFO] [STDOUT] -- Initialization --
+2013-08-18 15:42:38 [INFO] [STDOUT] Details:
+2013-08-18 15:42:38 [INFO] [STDOUT] Stacktrace:
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:796)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.client.main.Main.main(SourceFile:101)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at java.lang.reflect.Method.invoke(Unknown Source)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:57)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	at net.minecraft.launchwrapper.Launch.main(Launch.java:18)
+2013-08-18 15:42:38 [INFO] [STDOUT] 
+2013-08-18 15:42:38 [INFO] [STDOUT] -- System Details --
+2013-08-18 15:42:38 [INFO] [STDOUT] Details:
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Minecraft Version: 1.6.2
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Operating System: Windows 7 (amd64) version 6.1
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Java Version: 1.7.0_10, Oracle Corporation
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Memory: 164344592 bytes (156 MB) / 326762496 bytes (311 MB) up to 954466304 bytes (910 MB)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	JVM Flags: 2 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx1G
+2013-08-18 15:42:38 [INFO] [STDOUT] 	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Suspicious classes: FML and Forge are installed
+2013-08-18 15:42:38 [INFO] [STDOUT] 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+2013-08-18 15:42:38 [INFO] [STDOUT] 	FML: MCP v8.04 FML v6.2.43.827 Minecraft Forge 9.10.0.827 5 mods loaded, 5 mods active
+2013-08-18 15:42:38 [INFO] [STDOUT] 	mcp{8.04} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized
+2013-08-18 15:42:38 [INFO] [STDOUT] 	FML{6.2.43.827} [Forge Mod Loader] (coremods) Unloaded->Constructed->Pre-initialized
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Forge{9.10.0.827} [Minecraft Forge] (coremods) Unloaded->Constructed->Pre-initialized
+2013-08-18 15:42:38 [INFO] [STDOUT] 	bettertradecore{1.2.2} [Better Trade Core] (coremods) Unloaded->Constructed->Pre-initialized
+2013-08-18 15:42:38 [INFO] [STDOUT] 	bettertrade{1.2.2} [Better Villager Trades] (BetterTrade.zip) Unloaded->Constructed->Pre-initialized
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Launched Version: 1.6.2-Forge9.10.0.827
+2013-08-18 15:42:38 [INFO] [STDOUT] 	LWJGL: 2.9.0
+2013-08-18 15:42:38 [INFO] [STDOUT] 	OpenGL: AMD Radeon HD 6320 Graphics            GL version 4.1.10834 Compatibility Profile Context, ATI Technologies Inc.
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Is Modded: Definitely; Client brand changed to 'fml,forge'
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Type: Client (map_client.txt)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Resource Pack: Default
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Current Language: English (US)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Profiler Position: N/A (disabled)
+2013-08-18 15:42:38 [INFO] [STDOUT] 	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null
+2013-08-18 15:42:38 [INFO] [STDOUT] #@!@# Game crashed! Crash report saved to: #@!@# C:\Users\Kamakwazee\AppData\Roaming\.minecraft\crash-reports\crash-2013-08-18_15.42.38-client.txt
