@@ -1,32 +1,31 @@
 package net.minecraft.entity.passive;
 
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Formatter;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
-import mod.bettertrade.ItemTradeIndexes;
-import mod.bettertrade.StringItemConversion;
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentData;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.EntityLivingData;
 import net.minecraft.entity.IMerchant;
 import net.minecraft.entity.INpc;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAIAvoidEntity;
 import net.minecraft.entity.ai.EntityAIFollowGolem;
 import net.minecraft.entity.ai.EntityAILookAtTradePlayer;
 import net.minecraft.entity.ai.EntityAIMoveIndoors;
-import net.minecraft.entity.ai.EntityAIMoveTwardsRestriction;
+import net.minecraft.entity.ai.EntityAIMoveTowardsRestriction;
 import net.minecraft.entity.ai.EntityAIOpenDoor;
 import net.minecraft.entity.ai.EntityAIPlay;
 import net.minecraft.entity.ai.EntityAIRestrictOpenDoor;
@@ -42,7 +41,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.packet.Packet250CustomPayload;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChunkCoordinates;
@@ -53,12 +51,14 @@ import net.minecraft.village.MerchantRecipe;
 import net.minecraft.village.MerchantRecipeList;
 import net.minecraft.village.Village;
 import net.minecraft.world.World;
-import cpw.mods.fml.common.network.PacketDispatcher;
+import bettertrade.BetterTrade;
+import bettertrade.conversion.StringItemConversion;
+import bettertrade.trades.TradeManager;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityVillager extends EntityAgeable implements INpc, IMerchant
+public class EntityVillager extends EntityAgeable implements IMerchant, INpc
 {
     private int randomTickDivider;
     private boolean isMating;
@@ -80,11 +80,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     private String lastBuyingPlayer;
     private boolean field_82190_bM;
     private float field_82191_bN;
-    
-    //Added by BetterTrade
-    public ItemStack i1, i2, b;
-    public Item item1, item2, buyitem;
-    public Block block1, block2, buyblock;
 
     /**
      * a villagers recipe list is intialized off this list ; the 2 params are min/max amount they will trade for 1
@@ -97,6 +92,11 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
      * for 1 item
      */
     public static final Map blacksmithSellingList = new HashMap();
+    
+    //Added by BetterTrade
+    public ItemStack i1, i2, b;
+    public Item item1, item2, buyitem;
+    public Block block1, block2, buyblock;
 
     public EntityVillager(World par1World)
     {
@@ -106,31 +106,31 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     public EntityVillager(World par1World, int par2)
     {
         super(par1World);
-        this.randomTickDivider = 0;
-        this.isMating = false;
-        this.isPlaying = false;
-        this.villageObj = null;
         this.setProfession(par2);
-        this.texture = "/mob/villager/villager.png";
-        this.moveSpeed = 0.5F;
         this.setSize(0.6F, 1.8F);
         this.getNavigator().setBreakDoors(true);
         this.getNavigator().setAvoidsWater(true);
         this.tasks.addTask(0, new EntityAISwimming(this));
-        this.tasks.addTask(1, new EntityAIAvoidEntity(this, EntityZombie.class, 8.0F, 0.3F, 0.35F));
+        this.tasks.addTask(1, new EntityAIAvoidEntity(this, EntityZombie.class, 8.0F, 0.6D, 0.6D));
         this.tasks.addTask(1, new EntityAITradePlayer(this));
         this.tasks.addTask(1, new EntityAILookAtTradePlayer(this));
         this.tasks.addTask(2, new EntityAIMoveIndoors(this));
         this.tasks.addTask(3, new EntityAIRestrictOpenDoor(this));
         this.tasks.addTask(4, new EntityAIOpenDoor(this, true));
-        this.tasks.addTask(5, new EntityAIMoveTwardsRestriction(this, 0.3F));
+        this.tasks.addTask(5, new EntityAIMoveTowardsRestriction(this, 0.6D));
         this.tasks.addTask(6, new EntityAIVillagerMate(this));
         this.tasks.addTask(7, new EntityAIFollowGolem(this));
-        this.tasks.addTask(8, new EntityAIPlay(this, 0.32F));
+        this.tasks.addTask(8, new EntityAIPlay(this, 0.32D));
         this.tasks.addTask(9, new EntityAIWatchClosest2(this, EntityPlayer.class, 3.0F, 1.0F));
         this.tasks.addTask(9, new EntityAIWatchClosest2(this, EntityVillager.class, 5.0F, 0.02F));
-        this.tasks.addTask(9, new EntityAIWander(this, 0.3F));
+        this.tasks.addTask(9, new EntityAIWander(this, 0.6D));
         this.tasks.addTask(10, new EntityAIWatchClosest(this, EntityLiving.class, 8.0F));
+    }
+
+    protected void func_110147_ax()
+    {
+        super.func_110147_ax();
+        this.func_110148_a(SharedMonsterAttributes.field_111263_d).func_111128_a(0.5D);
     }
 
     /**
@@ -154,12 +154,12 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
 
             if (this.villageObj == null)
             {
-                this.detachHome();
+                this.func_110177_bN();
             }
             else
             {
                 ChunkCoordinates chunkcoordinates = this.villageObj.getCenter();
-                this.setHomeArea(chunkcoordinates.posX, chunkcoordinates.posY, chunkcoordinates.posZ, (int)((float)this.villageObj.getVillageRadius() * 0.6F));
+                this.func_110171_b(chunkcoordinates.posX, chunkcoordinates.posY, chunkcoordinates.posZ, (int)((float)this.villageObj.getVillageRadius() * 0.6F));
 
                 if (this.field_82190_bM)
                 {
@@ -222,7 +222,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
             if (!this.worldObj.isRemote)
             {
                 this.setCustomer(par1EntityPlayer);
-                par1EntityPlayer.displayGUIMerchant(this, this.func_94057_bL());
+                par1EntityPlayer.displayGUIMerchant(this, this.getCustomNameTag());
             }
 
             return true;
@@ -237,11 +237,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     {
         super.entityInit();
         this.dataWatcher.addObject(16, Integer.valueOf(0));
-    }
-
-    public int getMaxHealth()
-    {
-        return 20;
     }
 
     /**
@@ -275,30 +270,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         }
     }
 
-    @SideOnly(Side.CLIENT)
-
-    /**
-     * Returns the texture's file path as a String.
-     */
-    public String getTexture()
-    {
-        switch (this.getProfession())
-        {
-            case 0:
-                return "/mob/villager/farmer.png";
-            case 1:
-                return "/mob/villager/librarian.png";
-            case 2:
-                return "/mob/villager/priest.png";
-            case 3:
-                return "/mob/villager/smith.png";
-            case 4:
-                return "/mob/villager/butcher.png";
-            default:
-                return VillagerRegistry.getVillagerSkin(this.getProfession(), super.getTexture());
-        }
-    }
-
     /**
      * Determines if an entity can be despawned, used on idle far away entities
      */
@@ -312,7 +283,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
      */
     protected String getLivingSound()
     {
-        return "mob.villager.default";
+        return this.isTrading() ? "mob.villager.haggle" : "mob.villager.idle";
     }
 
     /**
@@ -320,7 +291,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
      */
     protected String getHurtSound()
     {
-        return "mob.villager.defaulthurt";
+        return "mob.villager.hit";
     }
 
     /**
@@ -328,7 +299,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
      */
     protected String getDeathSound()
     {
-        return "mob.villager.defaultdeath";
+        return "mob.villager.death";
     }
 
     public void setProfession(int par1)
@@ -361,15 +332,15 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         return this.isPlaying;
     }
 
-    public void setRevengeTarget(EntityLiving par1EntityLiving)
+    public void setRevengeTarget(EntityLivingBase par1EntityLivingBase)
     {
-        super.setRevengeTarget(par1EntityLiving);
+        super.setRevengeTarget(par1EntityLivingBase);
 
-        if (this.villageObj != null && par1EntityLiving != null)
+        if (this.villageObj != null && par1EntityLivingBase != null)
         {
-            this.villageObj.addOrRenewAgressor(par1EntityLiving);
+            this.villageObj.addOrRenewAgressor(par1EntityLivingBase);
 
-            if (par1EntityLiving instanceof EntityPlayer)
+            if (par1EntityLivingBase instanceof EntityPlayer)
             {
                 byte b0 = -1;
 
@@ -378,7 +349,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
                     b0 = -3;
                 }
 
-                this.villageObj.setReputationForPlayer(((EntityPlayer)par1EntityLiving).getCommandSenderName(), b0);
+                this.villageObj.setReputationForPlayer(((EntityPlayer)par1EntityLivingBase).getCommandSenderName(), b0);
 
                 if (this.isEntityAlive())
                 {
@@ -440,6 +411,8 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     public void useRecipe(MerchantRecipe par1MerchantRecipe)
     {
         par1MerchantRecipe.incrementToolUses();
+        this.livingSoundTime = -this.getTalkInterval();
+        this.playSound("mob.villager.yes", this.getSoundVolume(), this.getSoundPitch());
 
         if (par1MerchantRecipe.hasSameIDsAs((MerchantRecipe)this.buyingList.get(this.buyingList.size() - 1)))
         {
@@ -459,6 +432,23 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         if (par1MerchantRecipe.getItemToBuy().itemID == Item.emerald.itemID)
         {
             this.wealth += par1MerchantRecipe.getItemToBuy().stackSize;
+        }
+    }
+
+    public void func_110297_a_(ItemStack par1ItemStack)
+    {
+        if (!this.worldObj.isRemote && this.livingSoundTime > -this.getTalkInterval() + 20)
+        {
+            this.livingSoundTime = -this.getTalkInterval();
+
+            if (par1ItemStack != null)
+            {
+                this.playSound("mob.villager.yes", this.getSoundVolume(), this.getSoundPitch());
+            }
+            else
+            {
+                this.playSound("mob.villager.no", this.getSoundVolume(), this.getSoundPitch());
+            }
         }
     }
 
@@ -496,202 +486,263 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         MerchantRecipeList merchantrecipelist;
         merchantrecipelist = new MerchantRecipeList();
         VillagerRegistry.manageVillagerTrades(merchantrecipelist, this, this.getProfession(), this.rand);
-        int j;
-        String appdata = System.getenv("appdata");
-        String dir = "config";
+        int j = 0;
+        String dir = BetterTrade.getConfigDirectory();
         File config = new File(dir);
         if (config.exists() && config.isDirectory()){
-        	File cf = new File(dir + "\\BetterTrade.txt");
-        	System.out.println(cf.getAbsolutePath());
-        	if (cf.exists()){
+        	File cf = new File(dir + File.separator + "BetterTrade.txt");
+        	boolean connected = BetterTrade.connected;
+        	if (cf.exists() && !connected){
         		try {
 					Scanner s = new Scanner(cf);
-					ArrayList<String> lines = new ArrayList<String>();
 					while(s.hasNextLine()){
-						lines.add(s.nextLine());
-					}
-					Random r = new Random();
-					String l = lines.toArray(new String[lines.size()])[r.nextInt(lines.size())];
-					ByteArrayOutputStream bos = new ByteArrayOutputStream(8);
-					DataOutputStream dos = new DataOutputStream(bos);
-					char[] c = l.toCharArray();
-					String firstItem = "";
-					String secondItem = "";
-					String buyingItem = "";
-					String firstAmount = "";
-					String secondAmount = "";
-					String buyingAmount = "";
-					int amt1;
-					int amt2;
-					int buyamt;
-					int location = 0;
-					for(int i = 0; i < c.length; i++){
-						if (location == 0){
-							if(c[i] == '['){
-								location = 1;
+						String l = s.nextLine();
+						char[] c = l.toCharArray();
+						String firstItem = "";
+						String secondItem = "";
+						String buyingItem = "";
+						String firstAmount = "";
+						String secondAmount = "";
+						String buyingAmount = "";
+						String profession = "";
+						int amt1;
+						int amt2;
+						int buyamt;
+						int location = 0;
+						for(int i = 0; i < c.length; i++){
+							if (location == 0){
+								if(c[i] == '['){
+									location = 1;
+								}
+								else{
+									firstItem += c[i];
+								}
 							}
-							else{
-								firstItem += c[i];
+							else if(location == 1){
+								if (c[i] == ']'){
+									location = 2;
+								}
+								else{
+									firstAmount += c[i];
+								}
+							}
+							else if(location == 2){
+								if(c[i] == ':'){
+									location = 4;
+								}
+								else if(c[i] == ' '){
+									//Nothing happens
+								}
+								else if(c[i] == '['){
+									location = 3;
+								}
+								else{
+									secondItem += c[i];
+								}
+							}
+							else if(location == 3){
+								if(c[i] == ']'){
+									location = 4;
+								}
+								else{
+									secondAmount += c[i];
+								}
+							}
+							else if(location == 4){
+								if(c[i] == '['){
+									location = 5;
+								}
+								else if(c[i] == ':'){
+									//Nothing happens
+								}
+								else{
+									buyingItem += c[i];
+								}
+							}
+							else if(location == 5){
+								if(c[i] == ']'){
+									//Do nothing
+								}
+								else if(c[i] == ':'){
+									location = 6;
+								}
+								else{
+									if (c[i] != '\n' && i != c.length - 1)
+									{
+										buyingAmount += c[i];
+									}
+									else
+									{
+										profession = "-1";
+										location = 7;
+									}
+								}
+							}
+							else if(location == 6){
+								if(c[i] == ' '){
+									//Do nothing
+								}
+								else{
+									profession += c[i];
+								}
 							}
 						}
-						else if(location == 1){
-							if (c[i] == ']'){
-								location = 2;
-							}
-							else{
-								firstAmount += c[i];
-							}
+						/*System.out.println(firstItem + "\t" + firstAmount);
+						System.out.println(secondItem + "\t" + secondAmount);
+						System.out.println(buyingItem + "\t" + buyingAmount);*/
+						if(firstAmount != ""){
+							amt1 = Integer.parseInt(firstAmount);
+						}else{
+							amt1 = 1;
 						}
-						else if(location == 2){
-							if(c[i] == ':'){
-								location = 4;
-							}
-							else if(c[i] == ' '){
-								//Nothing happens
-							}
-							else if(c[i] == '['){
-								location = 3;
-							}
-							else{
-								secondItem += c[i];
-							}
-						}
-						else if(location == 3){
-							if(c[i] == ']'){
-								location = 4;
-							}
-							else{
-								secondAmount += c[i];
-							}
-						}
-						else if(location == 4){
-							if(c[i] == '['){
-								location = 5;
-							}
-							else if(c[i] == ':'){
-								//Nothing happens
-							}
-							else{
-								buyingItem += c[i];
-							}
-						}
-						else if(location == 5){
-							if(c[i] == ']'){
-								location = 6;
-							}
-							else{
-								buyingAmount += c[i];
-							}
-						}
-					}
-					System.out.println(firstItem + "\t" + firstAmount);
-					System.out.println(secondItem + "\t" + secondAmount);
-					System.out.println(buyingItem + "\t" + buyingAmount);
-					if(firstAmount != ""){
-						amt1 = Integer.parseInt(firstAmount);
-					}else{
-						amt1 = 1;
-					}
-					if (secondAmount != ""){
-						amt2 = Integer.parseInt(secondAmount);
-					}
-					else{
-						amt2 = 0;
-					}
-					if(buyingAmount != ""){
-						buyamt = Integer.parseInt(buyingAmount);
-					}
-					else{
-						buyamt = 0;
-					}
-					StringItemConversion sic = new StringItemConversion();
-					item1 = sic.stringToItem(firstItem, 1);
-					if(item1 == (Item)null){
-						block1 = sic.stringToBlock(firstItem, 1);
-						if(block1 == (Block)null){
-							i1 = new ItemStack(Item.emerald, amt1);
-						}
-						else{
-							i1 = new ItemStack(block1, amt1);
-						}
-					}
-					else{
-						i1 = new ItemStack(item1, amt1);
-					}
-					if (secondItem != ""){
-						item2 = sic.stringToItem(secondItem, 2);
-						if (item2 == (Item)null){
-							block2 = sic.stringToBlock(secondItem, 2);
-							if(block2 == (Block)null){
-								i2 = new ItemStack(Item.emerald, amt2);
-							}
-							else{
-								i2 = new ItemStack(block2, amt2);
-							}
+						if (secondAmount != ""){
+							amt2 = Integer.parseInt(secondAmount);
 						}
 						else{
-							i2 = new ItemStack(item2, amt2);
+							amt2 = 0;
 						}
-					}
-					else{
-						i2 = (ItemStack)null;
-					}
-					buyitem = sic.stringToItem(buyingItem, 3);
-					if(buyitem == (Item)null){
-						buyblock = sic.stringToBlock(buyingItem, 3);
-						if(buyblock == (Block)null){
-							b = new ItemStack(Item.emerald, buyamt);
+						if(buyingAmount != ""){
+							buyamt = Integer.parseInt(buyingAmount);
 						}
 						else{
-							b = new ItemStack(buyblock, buyamt);
+							buyamt = 0;
+						}
+						StringItemConversion sic = new StringItemConversion();
+						item1 = sic.stringToItem(firstItem);
+						if(item1 == (Item)null){
+							block1 = sic.stringToBlock(firstItem);
+							if(block1 == (Block)null){
+								i1 = new ItemStack(Item.emerald, amt1);
+							}
+							else{
+								i1 = new ItemStack(block1, amt1);
+							}
+						}
+						else{
+							i1 = new ItemStack(item1, amt1);
+						}
+						if (secondItem != ""){
+							item2 = sic.stringToItem(secondItem);
+							if (item2 == (Item)null){
+								block2 = sic.stringToBlock(secondItem);
+								if(block2 == (Block)null){
+									i2 = new ItemStack(Item.emerald, amt2);
+								}
+								else{
+									i2 = new ItemStack(block2, amt2);
+								}
+							}
+							else{
+								i2 = new ItemStack(item2, amt2);
+							}
+						}
+						else{
+							i2 = (ItemStack)null;
+						}
+						buyitem = sic.stringToItem(buyingItem);
+						if(buyitem == (Item)null){
+							buyblock = sic.stringToBlock(buyingItem);
+							if(buyblock == (Block)null){
+								b = new ItemStack(Item.emerald, buyamt);
+							}
+							else{
+								b = new ItemStack(buyblock, buyamt);
+							}
+						}
+						else{
+							b = new ItemStack(buyitem, buyamt);
+						}
+						int professionID = 0;
+						if(profession.equalsIgnoreCase("farmer")){
+							professionID = 0;
+						}
+						else if(profession.equalsIgnoreCase("librarian")){
+							professionID = 1;
+						}
+						else if(profession.equalsIgnoreCase("priest")){
+							professionID = 2;
+						}
+						else if(profession.equalsIgnoreCase("blacksmith")){
+							professionID = 3;
+						}
+						else if(profession.equalsIgnoreCase("butcher")){
+							professionID = 4;
+						}
+						else if(profession.equalsIgnoreCase("-1"))
+						{
+							professionID = -1;
+						}
+						else
+						{
+							professionID = -2;
+						}
+						
+						if(professionID == getProfession() || professionID == -1){
+							merchantrecipelist.add(new MerchantRecipe(i1,i2,b));
 						}
 					}
-					else{
-						b = new ItemStack(buyitem, buyamt);
-					}
-					dos.writeInt(ItemTradeIndexes.item1);
-					dos.writeInt(amt1);
-					dos.writeInt(ItemTradeIndexes.item2);
-					dos.writeInt(amt2);
-					dos.writeInt(ItemTradeIndexes.item3);
-					dos.writeInt(buyamt);
-					merchantrecipelist.add(new MerchantRecipe(i1,i2,b));
-					Packet250CustomPayload packet = new Packet250CustomPayload();
-					packet.channel = "BetterTrade";
-					packet.data = bos.toByteArray();
-					packet.length = bos.size();
-					PacketDispatcher.sendPacketToAllPlayers(packet);
 					s.close();
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
+        	}
+        	else if (connected)
+        	{
+        		int i1ID = BetterTrade.i1ID;
+        		int i1amt = BetterTrade.i1amt;
+        		int i2ID = BetterTrade.i2ID;
+        		int i2amt = BetterTrade.i2amt;
+        		int bID = BetterTrade.bID;
+        		int bamt = BetterTrade.bamt;
+        		if(i1ID == -1 && i1amt == -1 && i2ID == -1 && i2amt == -1 && bID == -1 && bamt == -1)
+        		{
+        			merchantrecipelist = vanillaTradingSystem(merchantrecipelist);
+        		}
+        		else
+        		{
+	        		if(i1ID > TradeManager.items.length)
+	        		{
+	        			i1ID -= TradeManager.items.length;
+	        			i1 = new ItemStack(TradeManager.blocks[i1ID], i1amt);
+	        		}
+	        		else
+	        		{
+	        			i1 = new ItemStack(TradeManager.items[i1ID], i1amt);
+	        		}
+	        		if(i2ID == -1)
+	        		{
+	        			i2 = (ItemStack)null;
+	        		}
+	        		else if(i2ID > TradeManager.items.length)
+	        		{
+	        			i2ID -= TradeManager.items.length;
+	        			i2 = new ItemStack(TradeManager.blocks[i2ID], i2amt);
+	        		}
+	        		else
+	        		{
+	        			i2 = new ItemStack(TradeManager.items[i2ID], i2amt);
+	        		}
+	        		if(bID > TradeManager.items.length)
+	        		{
+	        			bID -= TradeManager.items.length;
+	        			b = new ItemStack(TradeManager.blocks[bID], bamt);
+	        		}
+	        		else
+	        		{
+	        			b = new ItemStack(TradeManager.items[bID], bamt);
+	        		}
+	        		merchantrecipelist.add(new MerchantRecipe(i1,i2,b));
+        		}
         	}
         	else{
-        		try {
-					Formatter f = new Formatter(cf);
-					f.format("emerald[3]:swordDiamond[1]");
-					f.close();
-					merchantrecipelist.add(new MerchantRecipe(
-							new ItemStack(Item.emerald, 3),
-							(ItemStack)null,
-							new ItemStack(Item.swordDiamond, 1)
-							));
-				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-        		
+        		merchantrecipelist = vanillaTradingSystem(merchantrecipelist);	
         	}
-
         }
 
         if (merchantrecipelist.isEmpty())
         {
-            addMerchantItem(merchantrecipelist, Item.ingotGold.itemID, this.rand, 1.0F);
+        	merchantrecipelist = vanillaTradingSystem(merchantrecipelist);
         }
 
         Collections.shuffle(merchantrecipelist);
@@ -705,6 +756,133 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         {
             this.buyingList.addToListWithCheck((MerchantRecipe)merchantrecipelist.get(j1));
         }
+    }
+    
+    public MerchantRecipeList vanillaTradingSystem(MerchantRecipeList merchantrecipelist)
+    {
+    	
+    	int j = 0;
+    	
+    	label50:
+
+        switch (this.getProfession())
+        {
+            case 0:
+                addMerchantItem(merchantrecipelist, Item.wheat.itemID, this.rand, this.func_82188_j(0.9F));
+                addMerchantItem(merchantrecipelist, Block.cloth.blockID, this.rand, this.func_82188_j(0.5F));
+                addMerchantItem(merchantrecipelist, Item.chickenRaw.itemID, this.rand, this.func_82188_j(0.5F));
+                addMerchantItem(merchantrecipelist, Item.fishCooked.itemID, this.rand, this.func_82188_j(0.4F));
+                addBlacksmithItem(merchantrecipelist, Item.bread.itemID, this.rand, this.func_82188_j(0.9F));
+                addBlacksmithItem(merchantrecipelist, Item.melon.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.appleRed.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.cookie.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.shears.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.flintAndSteel.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.chickenCooked.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.arrow.itemID, this.rand, this.func_82188_j(0.5F));
+
+                if (this.rand.nextFloat() < this.func_82188_j(0.5F))
+                {
+                    merchantrecipelist.add(new MerchantRecipe(new ItemStack(Block.gravel, 10), new ItemStack(Item.emerald), new ItemStack(Item.flint.itemID, 4 + this.rand.nextInt(2), 0)));
+                }
+
+                break;
+            case 1:
+                addMerchantItem(merchantrecipelist, Item.paper.itemID, this.rand, this.func_82188_j(0.8F));
+                addMerchantItem(merchantrecipelist, Item.book.itemID, this.rand, this.func_82188_j(0.8F));
+                addMerchantItem(merchantrecipelist, Item.writtenBook.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Block.bookShelf.blockID, this.rand, this.func_82188_j(0.8F));
+                addBlacksmithItem(merchantrecipelist, Block.glass.blockID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.compass.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.pocketSundial.itemID, this.rand, this.func_82188_j(0.2F));
+
+                if (this.rand.nextFloat() < this.func_82188_j(0.07F))
+                {
+                    Enchantment enchantment = Enchantment.enchantmentsBookList[this.rand.nextInt(Enchantment.enchantmentsBookList.length)];
+                    int k = MathHelper.getRandomIntegerInRange(this.rand, enchantment.getMinLevel(), enchantment.getMaxLevel());
+                    ItemStack itemstack = Item.enchantedBook.getEnchantedItemStack(new EnchantmentData(enchantment, k));
+                    j = 2 + this.rand.nextInt(5 + k * 10) + 3 * k;
+                    merchantrecipelist.add(new MerchantRecipe(new ItemStack(Item.book), new ItemStack(Item.emerald, j), itemstack));
+                }
+
+                break;
+            case 2:
+                addBlacksmithItem(merchantrecipelist, Item.eyeOfEnder.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.expBottle.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.redstone.itemID, this.rand, this.func_82188_j(0.4F));
+                addBlacksmithItem(merchantrecipelist, Block.glowStone.blockID, this.rand, this.func_82188_j(0.3F));
+                int[] aint = new int[] {Item.swordIron.itemID, Item.swordDiamond.itemID, Item.plateIron.itemID, Item.plateDiamond.itemID, Item.axeIron.itemID, Item.axeDiamond.itemID, Item.pickaxeIron.itemID, Item.pickaxeDiamond.itemID};
+                int[] aint1 = aint;
+                int l = aint.length;
+                j = 0;
+
+                while (true)
+                {
+                    if (j >= l)
+                    {
+                        break label50;
+                    }
+
+                    int i1 = aint1[j];
+
+                    if (this.rand.nextFloat() < this.func_82188_j(0.05F))
+                    {
+                        merchantrecipelist.add(new MerchantRecipe(new ItemStack(i1, 1, 0), new ItemStack(Item.emerald, 2 + this.rand.nextInt(3), 0), EnchantmentHelper.addRandomEnchantment(this.rand, new ItemStack(i1, 1, 0), 5 + this.rand.nextInt(15))));
+                    }
+
+                    ++j;
+                }
+            case 3:
+                addMerchantItem(merchantrecipelist, Item.coal.itemID, this.rand, this.func_82188_j(0.7F));
+                addMerchantItem(merchantrecipelist, Item.ingotIron.itemID, this.rand, this.func_82188_j(0.5F));
+                addMerchantItem(merchantrecipelist, Item.ingotGold.itemID, this.rand, this.func_82188_j(0.5F));
+                addMerchantItem(merchantrecipelist, Item.diamond.itemID, this.rand, this.func_82188_j(0.5F));
+                addBlacksmithItem(merchantrecipelist, Item.swordIron.itemID, this.rand, this.func_82188_j(0.5F));
+                addBlacksmithItem(merchantrecipelist, Item.swordDiamond.itemID, this.rand, this.func_82188_j(0.5F));
+                addBlacksmithItem(merchantrecipelist, Item.axeIron.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.axeDiamond.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.pickaxeIron.itemID, this.rand, this.func_82188_j(0.5F));
+                addBlacksmithItem(merchantrecipelist, Item.pickaxeDiamond.itemID, this.rand, this.func_82188_j(0.5F));
+                addBlacksmithItem(merchantrecipelist, Item.shovelIron.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.shovelDiamond.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.hoeIron.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.hoeDiamond.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.bootsIron.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.bootsDiamond.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.helmetIron.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.helmetDiamond.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.plateIron.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.plateDiamond.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.legsIron.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.legsDiamond.itemID, this.rand, this.func_82188_j(0.2F));
+                addBlacksmithItem(merchantrecipelist, Item.bootsChain.itemID, this.rand, this.func_82188_j(0.1F));
+                addBlacksmithItem(merchantrecipelist, Item.helmetChain.itemID, this.rand, this.func_82188_j(0.1F));
+                addBlacksmithItem(merchantrecipelist, Item.plateChain.itemID, this.rand, this.func_82188_j(0.1F));
+                addBlacksmithItem(merchantrecipelist, Item.legsChain.itemID, this.rand, this.func_82188_j(0.1F));
+                break;
+            case 4:
+                addMerchantItem(merchantrecipelist, Item.coal.itemID, this.rand, this.func_82188_j(0.7F));
+                addMerchantItem(merchantrecipelist, Item.porkRaw.itemID, this.rand, this.func_82188_j(0.5F));
+                addMerchantItem(merchantrecipelist, Item.beefRaw.itemID, this.rand, this.func_82188_j(0.5F));
+                addBlacksmithItem(merchantrecipelist, Item.saddle.itemID, this.rand, this.func_82188_j(0.1F));
+                addBlacksmithItem(merchantrecipelist, Item.plateLeather.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.bootsLeather.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.helmetLeather.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.legsLeather.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.porkCooked.itemID, this.rand, this.func_82188_j(0.3F));
+                addBlacksmithItem(merchantrecipelist, Item.beefCooked.itemID, this.rand, this.func_82188_j(0.3F));
+        }
+    
+    	if(merchantrecipelist.isEmpty())
+    	{
+    		merchantrecipelist.add(new MerchantRecipe(
+					new ItemStack(Item.emerald, 3),
+					(ItemStack)null,
+					new ItemStack(Item.swordDiamond, 1)
+					));
+    	}
+    	
+    	return merchantrecipelist;
     }
 
     @SideOnly(Side.CLIENT)
@@ -785,6 +963,13 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         }
     }
 
+    public EntityLivingData func_110161_a(EntityLivingData par1EntityLivingData)
+    {
+        par1EntityLivingData = super.func_110161_a(par1EntityLivingData);
+        VillagerRegistry.applyRandomTrade(this, worldObj.rand);
+        return par1EntityLivingData;
+    }
+
     @SideOnly(Side.CLIENT)
 
     /**
@@ -801,14 +986,6 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         }
     }
 
-    /**
-     * Initialize this creature.
-     */
-    public void initCreature()
-    {
-        VillagerRegistry.applyRandomTrade(this, worldObj.rand);
-    }
-
     public void func_82187_q()
     {
         this.field_82190_bM = true;
@@ -817,8 +994,13 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     public EntityVillager func_90012_b(EntityAgeable par1EntityAgeable)
     {
         EntityVillager entityvillager = new EntityVillager(this.worldObj);
-        entityvillager.initCreature();
+        entityvillager.func_110161_a((EntityLivingData)null);
         return entityvillager;
+    }
+
+    public boolean func_110164_bC()
+    {
+        return false;
     }
 
     public EntityAgeable createChild(EntityAgeable par1EntityAgeable)
@@ -849,23 +1031,23 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
         villagerStockList.put(Integer.valueOf(Item.rottenFlesh.itemID), new Tuple(Integer.valueOf(36), Integer.valueOf(64)));
         blacksmithSellingList.put(Integer.valueOf(Item.flintAndSteel.itemID), new Tuple(Integer.valueOf(3), Integer.valueOf(4)));
         blacksmithSellingList.put(Integer.valueOf(Item.shears.itemID), new Tuple(Integer.valueOf(3), Integer.valueOf(4)));
-        blacksmithSellingList.put(Integer.valueOf(Item.swordSteel.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(11)));
+        blacksmithSellingList.put(Integer.valueOf(Item.swordIron.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(11)));
         blacksmithSellingList.put(Integer.valueOf(Item.swordDiamond.itemID), new Tuple(Integer.valueOf(12), Integer.valueOf(14)));
-        blacksmithSellingList.put(Integer.valueOf(Item.axeSteel.itemID), new Tuple(Integer.valueOf(6), Integer.valueOf(8)));
+        blacksmithSellingList.put(Integer.valueOf(Item.axeIron.itemID), new Tuple(Integer.valueOf(6), Integer.valueOf(8)));
         blacksmithSellingList.put(Integer.valueOf(Item.axeDiamond.itemID), new Tuple(Integer.valueOf(9), Integer.valueOf(12)));
-        blacksmithSellingList.put(Integer.valueOf(Item.pickaxeSteel.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(9)));
+        blacksmithSellingList.put(Integer.valueOf(Item.pickaxeIron.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(9)));
         blacksmithSellingList.put(Integer.valueOf(Item.pickaxeDiamond.itemID), new Tuple(Integer.valueOf(10), Integer.valueOf(12)));
-        blacksmithSellingList.put(Integer.valueOf(Item.shovelSteel.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
+        blacksmithSellingList.put(Integer.valueOf(Item.shovelIron.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
         blacksmithSellingList.put(Integer.valueOf(Item.shovelDiamond.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(8)));
-        blacksmithSellingList.put(Integer.valueOf(Item.hoeSteel.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
+        blacksmithSellingList.put(Integer.valueOf(Item.hoeIron.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
         blacksmithSellingList.put(Integer.valueOf(Item.hoeDiamond.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(8)));
-        blacksmithSellingList.put(Integer.valueOf(Item.bootsSteel.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
+        blacksmithSellingList.put(Integer.valueOf(Item.bootsIron.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
         blacksmithSellingList.put(Integer.valueOf(Item.bootsDiamond.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(8)));
-        blacksmithSellingList.put(Integer.valueOf(Item.helmetSteel.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
+        blacksmithSellingList.put(Integer.valueOf(Item.helmetIron.itemID), new Tuple(Integer.valueOf(4), Integer.valueOf(6)));
         blacksmithSellingList.put(Integer.valueOf(Item.helmetDiamond.itemID), new Tuple(Integer.valueOf(7), Integer.valueOf(8)));
-        blacksmithSellingList.put(Integer.valueOf(Item.plateSteel.itemID), new Tuple(Integer.valueOf(10), Integer.valueOf(14)));
+        blacksmithSellingList.put(Integer.valueOf(Item.plateIron.itemID), new Tuple(Integer.valueOf(10), Integer.valueOf(14)));
         blacksmithSellingList.put(Integer.valueOf(Item.plateDiamond.itemID), new Tuple(Integer.valueOf(16), Integer.valueOf(19)));
-        blacksmithSellingList.put(Integer.valueOf(Item.legsSteel.itemID), new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
+        blacksmithSellingList.put(Integer.valueOf(Item.legsIron.itemID), new Tuple(Integer.valueOf(8), Integer.valueOf(10)));
         blacksmithSellingList.put(Integer.valueOf(Item.legsDiamond.itemID), new Tuple(Integer.valueOf(11), Integer.valueOf(14)));
         blacksmithSellingList.put(Integer.valueOf(Item.bootsChain.itemID), new Tuple(Integer.valueOf(5), Integer.valueOf(7)));
         blacksmithSellingList.put(Integer.valueOf(Item.helmetChain.itemID), new Tuple(Integer.valueOf(5), Integer.valueOf(7)));
