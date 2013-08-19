@@ -14,7 +14,7 @@ public class BetterTradeClassTransformer implements IClassTransformer {
 	@Override
 	public byte[] transform(String arg0, String arg1, byte[] arg2) {
 
-		if(arg0.equals("ua") || arg0.equals("net.minecraft.entity.passive.EntityVillager"))
+		if(arg0.equals("ua"))
 		{
 			
 			System.out.println("************ INSIDE ENTITY TRANSFORMER ABOUT TO PATCH: " + arg0);
