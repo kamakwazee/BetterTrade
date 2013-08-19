@@ -14,6 +14,15 @@ If you are here to help me figure out the error, I have some notes:
 * I compile the coremod and normal mod together, then separate them when packaging. (possibly creating errors?)
 * The class I want to replace is net.minecraft.entity.passive.EntityVillager (ua when obfuscated)
 
+My Build Process
+===========
+
+* I first run recompile.bat. 
+* Then I run reobfuscate.bat. 
+* I then copy all of those files over to a build directory I have set up which contains the META-INF.
+* I then package all of that into a zip file using 7-zip. 
+* Finally, I rename it to be a jar file, and I test it in minecraft.
+
 Requirements
 ===========
 
