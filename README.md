@@ -1,7 +1,8 @@
-BetterTrade
+BetterTrade 1.1.2 for Minecraft 1.5.2
 ===========
 
 Minecraft mod for the villagers to give better trade. It is now available for Singleplayer and Multiplayer, and it is compatible with minecraft forge.
+
 
 My Build Process
 ===========
