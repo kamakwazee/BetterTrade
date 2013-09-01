@@ -1,6 +1,7 @@
 package bettertrade.core;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -17,7 +18,7 @@ public class BetterTradeClassTransformer implements IClassTransformer {
 		if(arg0.equals("ua"))
 		{
 			
-			System.out.println("************ INSIDE ENTITY TRANSFORMER ABOUT TO PATCH: " + arg0);
+			System.out.println("************ INSIDE BETTER TRADES TRANSFORMER ABOUT TO PATCH: " + arg0);
 			
 			arg2 = patchClassInJar(arg0, arg2, arg0, BetterTradeLoadingPlugin.location);
 			
@@ -36,7 +37,7 @@ public class BetterTradeClassTransformer implements IClassTransformer {
 			
 			ZipFile zip = new ZipFile(location);
 			
-			ZipEntry entry = zip.getEntry(name.replace('.',File.separatorChar) + ".class");
+			ZipEntry entry = zip.getEntry(name.replace('.', '/') + ".class");
 			
 			if(entry == null)
 			{
@@ -45,9 +46,15 @@ public class BetterTradeClassTransformer implements IClassTransformer {
 			else
 			{
 				InputStream zin = zip.getInputStream(entry);
-				
-				bytes = new byte[(int) entry.getSize()];
-				zin.read(bytes);
+				int size = (int) entry.getSize();
+				bytes = new byte[size];
+				int pos = 0;
+				while (pos < size) {
+				        int len = zin.read(bytes,pos,size-pos);
+				        if (len == 0)
+				                throw new IOException();
+				        pos += len;
+				}
 				zin.close();
 				
 				System.out.println("[BetterTrades]: Class " + name + " patched!");

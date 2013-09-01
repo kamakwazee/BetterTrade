@@ -20,12 +20,12 @@ public class BetterTradeDummyContainer extends DummyModContainer{
 		super(new ModMetadata());
 		ModMetadata meta = getMetadata();
 		
-		meta.modId = "bettertradecore";
-		meta.name = "Better Trade Core";
+		meta.modId = "bettertrade";
+		meta.name = "Better Trades";
 		meta.version = "1.2.2";
 		meta.credits = "Roll Credits ...";
 		meta.authorList = Arrays.asList("kamakwazee");
-		meta.description = "Core of Better Trades";
+		meta.description = "Better Trades";
 		meta.url = "";
 		meta.updateUrl = "";
 		meta.screenshots = new String[0];
