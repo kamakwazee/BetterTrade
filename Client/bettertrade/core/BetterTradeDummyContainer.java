@@ -20,13 +20,12 @@ public class BetterTradeDummyContainer extends DummyModContainer{
 		super(new ModMetadata());
 		ModMetadata meta = getMetadata();
 		
-		meta.modId = "bettertrade";
-		meta.name = "Better Trades";
-		meta.version = "1.2.2";
-		meta.credits = "Roll Credits ...";
+		meta.modId = "bettertradecore";
+		meta.name = "Better Trades Core";
+		meta.version = "1.1.2";
 		meta.authorList = Arrays.asList("kamakwazee");
-		meta.description = "Better Trades";
-		meta.url = "";
+		meta.description = "Better Trades Core";
+		meta.url = "http://www.minecraftforum.net/topic/1733683-162-spmp-better-trades-122/";
 		meta.updateUrl = "";
 		meta.screenshots = new String[0];
 		meta.logoFile = "";

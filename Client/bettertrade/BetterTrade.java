@@ -5,15 +5,17 @@ import bettertrade.common.CommonProxy;
 import bettertrade.event.BetterTradeEvents;
 import bettertrade.packets.BetterTradePacketHandler;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.Mod.PostInit;
+import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
-@Mod(modid="bettertrade", name="Better Villager Trades", version="1.2.2")
+@Mod(modid="bettertrade", name="Better Trades", version="1.1.2")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false,
 channels={"BetterTrade"}, packetHandler = BetterTradePacketHandler.class)
 public class BetterTrade {
@@ -33,13 +35,13 @@ public class BetterTrade {
 	public static int bamt = 0;                //Buying Amount
 	public static boolean connected = false;   //Connected to Server
 	
-	@EventHandler
+	@PreInit
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		
 	}
 	
-	@EventHandler
+	@Init
 	public void load(FMLInitializationEvent event)
 	{
 		
@@ -50,7 +52,7 @@ public class BetterTrade {
 
 	}
 	
-	@EventHandler
+	@PostInit
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		

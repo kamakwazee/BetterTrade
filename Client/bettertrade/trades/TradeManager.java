@@ -18,8 +18,7 @@ public class TradeManager {
 		"blazeRod", "ghastTear", "goldNugget", "netherStalkSeeds", "potion", "glassBottle", "spiderEye", "fermentedSpiderEye", "blazePowder", "magmaCream", "brewingStand", "cauldron", "eyeOfEnder",
 		"speckledMelon", "expBottle", "fireballCharge", "writableBook", "writtenBook", "emerald", "itemFrame", "flowerPot", "carrot", "potato", "bakedPotato", "poisonousPotato",
 		"emptyMap", "goldenCarrot", "skull", "carrotOnAStick", "netherStar", "pumpkinPie", "firework", "fireworkCharge", "enchantedBook", "comparator", "netherBrick", "netherQuartz", "minecartTnt",
-		"minecartHopper", "record13", "recordCat", "recordBlocks", "recordChirp", "recordFar", "recordMall", "recordMellohi", "recordStal", "recordStrad", "recordWard", "record11", "recordWait",
-		"horseArmorMetal", "horseArmorGold", "horseArmorDiamond", "leash", "nameTag"};
+		"minecartHopper", "record13", "recordCat", "recordBlocks", "recordChirp", "recordFar", "recordMall", "recordMellohi", "recordStal", "recordStrad", "recordWard", "record11", "recordWait"};
 	
 	public static String[] blockStrings = {"stone", "dirt", "cobblestone", "planks", "sapling", "bedrock", "sand", "gravel", "wood", "leaves", "sponge", "glass", "blockLapis", "dispenser", "sandStone", "bed",
 			"railPowered", "railDetector", "pistonSticky", "web", "tallGrass", "deadBush", "piston", "wool", "flowerYellow", "flowerRed", "mushroomBrown", "mushroomRed", "blockGold", "blockIron",
@@ -29,8 +28,7 @@ public class TradeManager {
 			"mushroomCapRed", "fenceIron", "thinGlass", "melon", "gate", "stairsBrick", "stairsStoneBrickSmooth", "mycelium", "waterlily", "netherBrick", "netherFence", "stairsNetherBrick",
 			"enchantmentTable", "brewingStand", "cauldron", "whiteStone", "dragonEgg", "redstoneLamp", "woodSlab", "cocoaPlant", "stairsSandStone", "enderChest", "tripWireSource", "tripWire", "blockEmerald", 
 			"stairsWoodSpruce", "stairsWoodBirch", "stairsWoodJungle", "beacon", "cobblestoneWall", "flowerPot", "carrot", "potato", "woodenButton", "skull", "anvil", "chestTrapped", "pressurePlateGold",
-			"pressurePlateIron", "comparator", "daylightSensor", "blockRedstone", "hopper", "quartzBlock", "stairsQuartz", "activatorRail", "dropper", "clayHardenedStained", "hayBlock", "woolCarpet",
-			"clayHardened", "blockCoal"};
+			"pressurePlateIron", "comparator", "daylightSensor", "blockRedstone", "hopper", "quartzBlock", "stairsQuartz", "activatorRail", "dropper"};
 	
     public static Item[] items = {Item.shovelIron, Item.pickaxeIron, Item.axeIron, Item.flintAndSteel, Item.appleRed, Item.bow, Item.arrow, Item.coal, Item.diamond, Item.ingotIron, Item.ingotGold, 
     	Item.swordIron, Item.swordWood, Item.shovelWood, Item.pickaxeWood, Item.axeWood, Item.swordStone, Item.shovelStone, Item.pickaxeStone, Item.axeStone, Item.swordDiamond, Item.shovelDiamond,
@@ -39,15 +37,14 @@ public class TradeManager {
     	Item.helmetChain, Item.plateChain, Item.legsChain, Item.bootsChain, Item.helmetIron, Item.plateIron, Item.legsIron, Item.bootsIron, Item.helmetDiamond, Item.plateDiamond, 
     	Item.legsDiamond, Item.bootsDiamond, Item.helmetGold, Item.plateGold, Item.legsGold, Item.bootsGold, Item.flint, Item.porkRaw, Item.porkCooked, Item.painting, Item.appleGold, Item.sign, 
     	Item.doorWood, Item.bucketEmpty, Item.bucketWater, Item.bucketLava, Item.minecartEmpty, Item.saddle, Item.doorIron, Item.redstone, Item.snowball, Item.boat, Item.leather, Item.bucketMilk, 
-    	Item.brick, Item.clay, Item.reed, Item.paper, Item.book, Item.slimeBall, Item.minecartCrate, Item.minecartPowered, Item.egg, Item.compass, Item.fishingRod, Item.pocketSundial, Item.glowstone, 
+    	Item.brick, Item.clay, Item.reed, Item.paper, Item.book, Item.slimeBall, Item.minecartCrate, Item.minecartPowered, Item.egg, Item.compass, Item.fishingRod, Item.pocketSundial, Item.lightStoneDust, 
     	Item.fishRaw, Item.fishCooked, Item.dyePowder, Item.bone, Item.sugar, Item.cake, Item.bed, Item.redstoneRepeater, Item.cookie, Item.map, Item.shears, Item.melon, Item.pumpkinSeeds, Item.melonSeeds, 
     	Item.beefRaw, Item.beefCooked, Item.chickenRaw, Item.chickenCooked, Item.rottenFlesh, Item.enderPearl, Item.blazeRod, Item.ghastTear, Item.goldNugget, Item.netherStalkSeeds, Item.potion, 
     	Item.glassBottle, Item.spiderEye, Item.fermentedSpiderEye, Item.blazePowder, Item.magmaCream, Item.brewingStand, Item.cauldron, Item.eyeOfEnder, Item.speckledMelon, 
     	Item.expBottle, Item.fireballCharge, Item.writableBook, Item.writtenBook, Item.emerald, Item.itemFrame, Item.flowerPot, Item.carrot, Item.potato, Item.bakedPotato, Item.poisonousPotato, 
     	Item.emptyMap, Item.goldenCarrot, Item.skull, Item.carrotOnAStick, Item.netherStar, Item.pumpkinPie, Item.firework, Item.fireworkCharge, Item.enchantedBook, Item.comparator, Item.netherrackBrick, 
     	Item.netherQuartz, Item.minecartTnt, Item.minecartHopper, Item.record13, Item.recordCat, Item.recordBlocks, Item.recordChirp, Item.recordFar, Item.recordMall, Item.recordMellohi, 
-    	Item.recordStal, Item.recordStrad, Item.recordWard, Item.record11, Item.recordWait, Item.field_111215_ce, Item.field_111216_cf, Item.field_111213_cg, Item.field_111214_ch,
-    	Item.field_111212_ci};
+    	Item.recordStal, Item.recordStrad, Item.recordWard, Item.record11, Item.recordWait};
     
     public static Block[] blocks = {Block.stone, Block.dirt, Block.cobblestone, Block.planks, Block.sapling, Block.bedrock, Block.sand, Block.gravel, Block.wood, Block.leaves, Block.sponge, Block.glass, 
 		Block.blockLapis, Block.dispenser, Block.sandStone, Block.bed, Block.railPowered, Block.railDetector, Block.pistonStickyBase, Block.web, Block.tallGrass, Block.deadBush, Block.pistonBase,
@@ -60,8 +57,7 @@ public class TradeManager {
 		Block.stairsNetherBrick, Block.enchantmentTable, Block.brewingStand, Block.cauldron, Block.whiteStone, Block.dragonEgg, Block.redstoneLampActive, Block.woodSingleSlab, Block.cocoaPlant,
 		Block.stairsSandStone, Block.enderChest, Block.tripWireSource, Block.tripWire, Block.blockEmerald, Block.stairsWoodSpruce, Block.stairsWoodBirch, Block.stairsWoodJungle, Block.beacon,
 		Block.cobblestoneWall, Block.flowerPot, Block.carrot, Block.potato, Block.woodenButton, Block.skull, Block.anvil, Block.chestTrapped, Block.pressurePlateGold, Block.pressurePlateIron,
-		Block.redstoneComparatorIdle, Block.daylightSensor, Block.blockRedstone, Block.hopperBlock, Block.blockNetherQuartz, Block.stairsNetherQuartz, Block.railActivator, Block.dropper,
-		Block.field_111039_cA, Block.field_111038_cB, Block.field_111031_cC, Block.field_111032_cD, Block.field_111034_cE};
+		Block.redstoneComparatorIdle, Block.daylightSensor, Block.blockRedstone, Block.hopperBlock, Block.blockNetherQuartz, Block.stairsNetherQuartz, Block.railActivator, Block.dropper};
     
     /**
      *  Removes all default item trades

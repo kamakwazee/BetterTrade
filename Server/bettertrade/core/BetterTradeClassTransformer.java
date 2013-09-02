@@ -6,16 +6,16 @@ import java.io.InputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-import net.minecraft.launchwrapper.IClassTransformer;
+import cpw.mods.fml.relauncher.IClassTransformer;
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin.MCVersion;
 
-@MCVersion(value = "1.6.2")
+@MCVersion(value = "1.5.2")
 public class BetterTradeClassTransformer implements IClassTransformer {
 
 	@Override
 	public byte[] transform(String arg0, String arg1, byte[] arg2) {
 
-		if(arg0.equals("ua"))
+		if(arg0.equals("sm"))
 		{
 			
 			System.out.println("************ INSIDE BETTER TRADES TRANSFORMER ABOUT TO PATCH: " + arg0);
